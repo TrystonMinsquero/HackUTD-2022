@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d499061baa2c4987b2b9f8dbb718d35, type: 3}
+  m_Name: ACM
+  m_EditorClassIdentifier: 
+  name: Association for computing Machinery
+  president: 
+  description: ACM National, the Association for Computing Machinery, was founded
+    in 1947 for the advancement of computing as a science and a profession, and has
+    become the world's largest computing society. We're here to bring it to UT Dallas
+    in style. Enjoy coding, technology, networking (both kinds), and tons of fun?
+    Come on in. At ACM, you'll everything from industry events, workshops, UTD's
+    top student hackathon, LAN parties, and more. HackUTD is the official student
+    hackathon of UT Dallas, and North Texas' largest university hackathon, run by
+    ACM in partnership with Major League Hacking. Students come from all around the
+    nation to UTD to code, build, and create incredible things in 24 hours. ACM Projects
+    is a semester-long opportunity for new engineering and computer science students
+    to learn about software engineering principles in a project-oriented fashion.
+    Due to the overwhelming success and interest in ACM Projects, ACM Ignite was
+    created for the more experienced students. It provides a similar team opportunity
+    to create and develop a project, but the environment is more self-guided and
+    self-driven compared to the guidance given to Projects participants. Interested
+    in research as an undergrad? Look no further! Come check out our new ACM research
+    division, where students are partnered with professors to undertake a semester-long
+    research project, with the end goal of a poster proposal and continuing the research
+    in the future. Last but not least, ACM Education has great plans for outreach
+    and volunteer opportunities for the upcoming 2019-2020 school year. Come out
+    to our events, learn different things, and get involved!
+  icon: {fileID: 21300000, guid: 297355677d05b5f41af2d24c37e44d14, type: 3}
+  memberCount: 183
