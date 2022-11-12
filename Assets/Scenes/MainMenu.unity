@@ -1003,6 +1003,7 @@ GameObject:
   m_Component:
   - component: {fileID: 850313505}
   - component: {fileID: 850313506}
+  - component: {fileID: 850313507}
   m_Layer: 0
   m_Name: UI_Controller
   m_TagString: Untagged
@@ -1037,6 +1038,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9810f8ff091242109e80ef9bb6e234c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &850313507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850313504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8001dcdcf8024ef38a5cafaa2fb8b71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clubs:
+  - name: SGDA
+    president: Tryston Minsquirrel
+    description: 
+    icon: {fileID: 0}
+    memberCount: 0
+  searchText: 
 --- !u!1 &908766834
 GameObject:
   m_ObjectHideFlags: 0
@@ -1471,8 +1491,8 @@ Camera:
   m_GameObject: {fileID: 1257736530}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

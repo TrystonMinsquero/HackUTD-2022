@@ -1,9 +1,18 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Catalog : MonoBehaviour
+public class UI_Catalog : MonoBehaviour
 {
+	[SerializeField] List<ClubObject> clubs = new List<ClubObject>();
+	
+	public string searchText = "";
+	
+	
+	public void updateSearch() {
+		
+	}
+	
     // Start is called before the first frame update
     void Start()
     {
