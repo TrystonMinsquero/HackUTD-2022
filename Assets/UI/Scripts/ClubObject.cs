@@ -9,6 +9,6 @@ public class ClubObject : ScriptableObject
 {
 	public string name, president, description;
 	public List<Category> categories;
-	public Sprite icon;
+	public Sprite icon, presidentIcon;
 	public int memberCount;
 }
