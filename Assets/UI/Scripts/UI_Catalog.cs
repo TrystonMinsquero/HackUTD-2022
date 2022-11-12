@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UI_Catalog : MonoBehaviour
 {
+	
 	[SerializeField] List<ClubObject> clubs = new List<ClubObject>();
 	
-	public string searchText = "";
+	public string searchText = "", sceneName = "scene";
 	
 	
 	public void updateSearch() {
@@ -24,4 +26,8 @@ public class UI_Catalog : MonoBehaviour
     {
         
     }
+    
+	public void filterButton() {
+		SceneManager.LoadScene(sceneName);
+	}
 }
