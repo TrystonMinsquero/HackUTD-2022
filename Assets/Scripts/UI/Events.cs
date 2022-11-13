@@ -4,17 +4,25 @@ using UnityEngine;
 
 public class Events : MonoBehaviour
 {
-	public List<Event> events;
-	
-	public Event eventPrefab;
-	public RectTransform eventContent;
-	
-    void Start()
-    {
-        
-    }
+	[SerializeField] private UI_Controller _controller;
+	[SerializeField] private Event eventPrefab;
+	[SerializeField] private RectTransform eventContent;
+	[SerializeField] private List<Event> events;
     
-	public void Reset() {
+	private void OnValidate()
+	{
+		if (!_controller) _controller = FindObjectOfType<UI_Controller>();
+	}
+	
+	private void OnEnable()
+	{
+		Reset();
+		foreach (ClubObject club in _controller.user.userClubs) {
+			AddEvents(club.events);
+		}
+	}
+	
+	private void Reset() {
 		foreach (Event ev in events) {
 			Destroy(ev.gameObject);
 		}
@@ -29,7 +37,7 @@ public class Events : MonoBehaviour
 		events.Add(e);
 	}
 	
-	public void AddEvents(List<EventObject> eventObjects) {
+	private void AddEvents(List<EventObject> eventObjects) {
 		foreach (EventObject e in eventObjects) {
 			Event ev = Instantiate(eventPrefab, eventContent);
 			ev.SetEvent(e.name, e.club, e.date, e.time, e.desc, e.location);

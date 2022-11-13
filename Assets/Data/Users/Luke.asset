@@ -10,7 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67c54ed383e045e0bc0bafd1df0343e7, type: 3}
-  m_Name: User
+  m_Name: Luke
   m_EditorClassIdentifier: 
-  name: 
-  friends: []
+  netId: luke
+  password: a
+  firstName: Luke
+  lastName: L
+  friends:
+  - Tryston Minsquero
+  - Linus Facler
+  userClubs:
+  - {fileID: 11400000, guid: bde348d33883ca54388f4358d8f98b83, type: 2}

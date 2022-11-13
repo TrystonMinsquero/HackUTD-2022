@@ -9,59 +9,57 @@ public enum Sorting {
 	MemberCount,
 	Tag,
 }
+
 public class UI_Catalog : MonoBehaviour
 {
+	[SerializeField] private UI_Club uiClub;
+	[SerializeField] private List<ClubObject> clubs;
+	[SerializeField] private Sorting sorting = Sorting.Name;
+	[SerializeField] private TMP_InputField field;
+	[SerializeField] private ClubButton clubPrefab;
+	[SerializeField] private RectTransform content;
+	[SerializeField] private List<ClubButton> clubButtons;
+	[SerializeField] private string searchText = "";
 	
-	[SerializeField] List<ClubObject> clubs = new List<ClubObject>();
-	[SerializeField] RectTransform content;
-	[SerializeField] ClubButton clubPrefab;
-	[SerializeField] Sorting sorting = Sorting.Name;
-	[SerializeField] TMP_InputField field;
-	
-	UI_Club uiClub;
-	
-	public string searchText = "";
-	
-	List<ClubButton> clubButtons = new List<ClubButton>();
-	
-	public void updateSearch() {
-		
+	private void OnValidate()
+	{
+		if (!uiClub) uiClub = FindObjectOfType<UI_Club>();
 	}
 	
-    // Start is called before the first frame update
-    void Start()
-	{
-		uiClub = GetComponent<UI_Club>();
-		
-		foreach (Transform obj in content) {
-			Destroy(obj.gameObject);
-		}
-		
-	    foreach (ClubObject club in clubs) {
-	    	ClubButton button = Instantiate(clubPrefab, content);
-	    	button.Apply(club);
-	    	
-	    	clubButtons.Add(button);
-	    	
-	    	string scene = club.scene;
-	    	button.button.onClick.AddListener(() => {
-	    		LoadContent(button.club);
-	    	});
-	    }
-	    
+	private void OnEnable()
+	{		
+		Reset();
+		AddClubs();
 		Sort();
-    }
+	}
+    
+	private void Reset()
+	{
+		foreach (ClubButton club in clubButtons) {
+			Destroy(club.gameObject);
+		}
+		clubButtons.Clear();
+	}
+	
+	private void AddClubs()
+	{
+		foreach (ClubObject club in clubs) {
+			ClubButton button = Instantiate(clubPrefab, content);
+			button.Apply(club);
+	    	
+			clubButtons.Add(button);
+	    	
+			string scene = club.scene;
+			button.button.onClick.AddListener(() => {
+				LoadClubDetails(button.club);
+			});
+		}
+	}
 
-	public void LoadContent(ClubObject club) {
+	public void LoadClubDetails(ClubObject club) {
 		uiClub.attachedClub = club;
 		uiClub.open();
 	}
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     
 	public void Type() {
 		searchText = field.text.ToLower();
@@ -71,7 +69,6 @@ public class UI_Catalog : MonoBehaviour
 			button.gameObject.SetActive(contains);
 		}
 	}
-	
 	
 	public void SetSort(Sorting sorting) {
 		this.sorting = sorting;
