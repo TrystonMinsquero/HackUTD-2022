@@ -562,7 +562,7 @@ GameObject:
   - component: {fileID: 1600397237}
   - component: {fileID: 1600397236}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Object Pool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -598,7 +598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PooledPrefabsList:
   - Prefab: {fileID: 1825958111715007405, guid: 920c7247f9726204f96a13f15ce1a432, type: 3}
-    PrewarmCount: 15
+    PrewarmCount: 10
 --- !u!4 &1600397238
 Transform:
   m_ObjectHideFlags: 0
