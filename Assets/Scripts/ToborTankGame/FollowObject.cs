@@ -12,6 +12,12 @@ public class FollowObject : MonoBehaviour
 	
 	private void LateUpdate()
 	{
+		if (!_objToFollow)
+		{
+			var player = FindObjectOfType<ToborTank>();
+			if (!player) return;
+			_objToFollow = player.transform;
+		}
 		var speed = _followSpeed * Time.deltaTime;
 		transform.position = Vector3.Lerp(transform.position, _objToFollow.position, speed);
 		var orig = transform.rotation.eulerAngles;

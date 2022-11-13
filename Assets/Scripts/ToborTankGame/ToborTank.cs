@@ -12,6 +12,7 @@ public class ToborTank : Player
 	private Rigidbody Rb;
 	private float _forwardAmount;
 	private float _turnAmount;
+	private float _fireTime;
 
 	private void Awake()
 	{
@@ -56,6 +57,8 @@ public class ToborTank : Player
 	
 	private void Fire()
 	{
+		if (Time.time - _fireTime < _fireCooldown) return;
+		_fireTime = Time.time;
 		var t = Instantiate(_objToFire).transform;
 		t.position = _firePos.position;
 		t.rotation = _firePos.rotation;

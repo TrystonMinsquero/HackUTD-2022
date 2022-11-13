@@ -16,21 +16,21 @@
                 },
                 {
                     "name": "LeftAction",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "01bad9ac-cc2f-4fc6-86ce-02de1559c73f",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "RightAction",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "c36e0afd-6ba5-4c09-bbcb-5ec40508bf11",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "RightAxis",
