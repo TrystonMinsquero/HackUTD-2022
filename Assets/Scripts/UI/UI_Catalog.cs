@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.UI;
 
 public enum Sorting {
 	Name,
@@ -15,9 +16,12 @@ public class UI_Catalog : MonoBehaviour
 {
 	[SerializeField] private UI_Club uiClub;
 	[SerializeField] private List<ClubObject> clubs;
-	[SerializeField] private Sorting sorting = Sorting.Name;
+	[SerializeField] private Sorting sorting = Sorting.Meter;
 	[SerializeField] private TMP_InputField field;
 	[SerializeField] private ClubButton clubPrefab;
+	// [SerializeField] private Image searchImageIcon;
+	// [SerializeField] private Sprite brainIcon;
+	// [SerializeField] private Sprite searchIcon;
 	[SerializeField] private RectTransform content;
 	[SerializeField] private List<ClubButton> clubButtons;
 	[SerializeField] private string searchText = "";
@@ -26,7 +30,7 @@ public class UI_Catalog : MonoBehaviour
 	{
 		if (!uiClub) uiClub = FindObjectOfType<UI_Club>();
 	}
-	
+
 	private void OnEnable()
 	{		
 		Reset();
@@ -67,12 +71,13 @@ public class UI_Catalog : MonoBehaviour
 		
 		foreach (ClubButton button in clubButtons) {
 			bool contains = button.searchableText.Contains(searchText);
-			button.gameObject.SetActive(contains);
+			button.meter.gameObject.SetActive(contains);
 		}
 	}
 	
 	public void SetSort(Sorting sorting) {
 		this.sorting = sorting;
+		// searchImageIcon.sprite = sorting == Sorting.Meter ? brainIcon : searchIcon;
 		Sort();
 	}
 	
@@ -95,6 +100,7 @@ public class UI_Catalog : MonoBehaviour
 		int i = 0;
 		foreach (ClubButton button in clubButtons) {
 			button.transform.SetSiblingIndex(i++);
+			button.meter.gameObject.SetActive(sorting == Sorting.Meter);
 		}
 	}
 	
@@ -119,6 +125,7 @@ public class UI_Catalog : MonoBehaviour
 		
 		foreach (ClubButton btn in clubButtons) {
 			descs.Add(btn.searchableText);
+			btn.meter.gameObject.SetActive(true);
 		}
 		
 		var results = AI.Run(searchText, descs);
