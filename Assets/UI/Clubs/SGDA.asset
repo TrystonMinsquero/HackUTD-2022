@@ -26,3 +26,11 @@ MonoBehaviour:
   startColor: {r: 0.94509804, g: 0.94509804, b: 0.94509804, a: 1}
   endColor: {r: 0.33333334, g: 0.33333334, b: 0.33333334, a: 1}
   scene: Game
+  events:
+  - name: Fall Game Jam
+    club: SGDA
+    date: Nov 13
+    time: 7:00pm - 8:00pm
+    desc: Team up in groups of four to create a playable project and meet a few new
+      friends!
+    location: Makerspace

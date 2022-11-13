@@ -42,3 +42,10 @@ MonoBehaviour:
   startColor: {r: 0.16862746, g: 0.16078432, b: 0.65882355, a: 1}
   endColor: {r: 1, g: 0.44313726, b: 0.15686275, a: 1}
   scene: 
+  events:
+  - name: HackUTD
+    club: ACM
+    date: Nov 12
+    time: 12:00pm - 8:00pm
+    desc: Create, prototype, deploy! Attend workshops!
+    location: ECSW

@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[SerializeField]
+[System.Serializable]
 public class EventObject
 {
-	
+	public string name, club, date, time, desc, location;
 }
