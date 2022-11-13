@@ -7,7 +7,8 @@ public enum Category {ECS, JSOM, ATEC, MUSIC}
 [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/ClubObject", order = 1)]
 public class ClubObject : ScriptableObject
 {
-	public string name, president, description;
+	public string name, president;
+	[TextArea] public string description;
 	public List<Category> categories;
 	public Sprite icon, presidentIcon;
 	public int memberCount;
