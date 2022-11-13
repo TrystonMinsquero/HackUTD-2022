@@ -24,6 +24,7 @@ public class Snake : MonoBehaviour
     private void Start()
     {
         ResetState();
+        Time.fixedDeltaTime = 0.2f;
     }
 
     private void FixedUpdate()
@@ -34,8 +35,8 @@ public class Snake : MonoBehaviour
         }
 
         this.transform.position = new Vector3(
-            Mathf.Round(this.transform.position.x) + (horizontal * 1.1f),          // new position vector
-            Mathf.Round(this.transform.position.y) + (vertical * 1.1f),
+            Mathf.Round(this.transform.position.x) + (horizontal),          // new position vector
+            Mathf.Round(this.transform.position.y) + (vertical),
             0.0f
         );
     }
@@ -109,7 +110,7 @@ public class Snake : MonoBehaviour
         //     //highscoreText.GetComponent<TMP_Text>().text = score.ToString("000000");
         // }
         // high score option
-        scoreText.GetComponent<TMP_Text>().text = "000000";
+        scoreText.GetComponent<TMP_Text>().text = "0000000";
         score = 0;
     }
 
