@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: SGDA
   president: Tryston Minsquero
-  description: 'We serve to create a growing community of students and industry professionals
-    to promote game development. We foster this community by hosting various events
-    to help our members learn technical and professional skills associated with the
-    games industry. '
+  description: 'The Student Game Developer Association is a club focused on game
+    development. We serve to create a growing community of students and industry
+    professionals to promote game development. We foster this community by hosting
+    various events to help our members learn technical and professional skills associated
+    with the games industry. '
   categories: 0000000002000000
   icon: {fileID: 21300000, guid: ac578087b22002e4cb7975dc54f03aeb, type: 3}
   presidentIcon: {fileID: 0}

@@ -13,6 +13,8 @@ public class ClubButton : MonoBehaviour
 	public TextMeshProUGUI nameText, memberText;
 	public Button button;
 	
+	public string searchableText = "";
+	
 	public void Apply(ClubObject club) {
 		this.club = club;
 		
@@ -22,5 +24,7 @@ public class ClubButton : MonoBehaviour
 		
 		gradient.LinearColor1 = club.startColor;
 		gradient.LinearColor2 = club.endColor;
+		
+		this.searchableText = club.name.ToLower() + " " + club.description.ToLower();
 	}
 }
