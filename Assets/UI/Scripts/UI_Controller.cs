@@ -7,6 +7,7 @@ public class UI_Controller : MonoBehaviour
 	public UI_Catalog catalog;
 	public UI_Club clubViewer;
 	public Events events;
+	public Home home;
 	
 	public GameObject[] screens;
 	
@@ -17,6 +18,8 @@ public class UI_Controller : MonoBehaviour
     {
 	    Application.targetFrameRate = 60;
 	    events = GetComponent<Events>();
+	    
+	    ShowClubs();
     }
 
     // Update is called once per frame
@@ -45,5 +48,14 @@ public class UI_Controller : MonoBehaviour
 				events.AddEvents(club.events);
 			}
 		}
+		
+		if (index == 0) {
+			ShowClubs();
+		}
+	}
+	
+	public void ShowClubs() {
+		home.Reset();
+		home.AddClubs(userClubs);
 	}
 }
