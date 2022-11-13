@@ -7,40 +7,46 @@ using UnityEngine.SceneManagement;
 
 public class UI_Club : MonoBehaviour
 {
+	[SerializeField] private UI_Controller _controller;
 	public RectTransform clubTransform;
-	public TextMeshProUGUI nameText, presidentText, description;
+	public TMP_Text abbrevText, nameText, presidentText, tagline, description, memberCount;
 	public Image presidentImage;
 	
 	public int startPosition, endPosition;
 	public float duration = 0.3f;
 	public AnimationCurve lerpCurve;
-	private bool busy = false;
+	[SerializeField] private GameObject _joinClubButton;
+	[SerializeField] private GameObject _leaveClubButton;
 	
 	public ClubObject attachedClub;
 	
-	void Start() {
+	private bool InClub => _controller.user.userClubs.Contains(attachedClub);
+	
+	private bool busy = false;
+	
+	private void OnValidate()
+	{
+		if (!_controller) _controller = FindObjectOfType<UI_Controller>();
+	}
+	
+	private void Start()
+	{
 		clubTransform.anchoredPosition = new Vector2(0, startPosition);
 	}
 	
-    void Update()
-	{
-	    string name="", pres="", desc="";
-	    Sprite presImage=null;
+	public void open(ClubObject club) {
+		attachedClub = club;
 	    
-	    if (attachedClub != null) {
-	    	name = attachedClub.name;
-	    	pres = $"President\n<b>{attachedClub.president}";
-	    	desc = attachedClub.description;
-	    	presImage = attachedClub.presidentIcon;
-	    }
-	    
-	    nameText.text = name;
-	    presidentText.text = pres;
-	    description.text = desc;
-	    presidentImage.sprite = presImage;
-    }
-    
-	public void open() {
+		if (abbrevText) abbrevText.text = attachedClub.abbreviation;
+		if (nameText) nameText.text = attachedClub.name;
+		if (presidentText) presidentText.text = $"President\n<b>{attachedClub.president}";
+		if (tagline) tagline.text = attachedClub.shortKeyWords;
+		if (description) description.text = attachedClub.description;
+		if (description) description.text = attachedClub.description;
+		if (presidentImage) presidentImage.sprite = attachedClub.presidentIcon;
+		if (memberCount) memberCount.text = $"Members: {attachedClub.memberCount}";
+		
+		CheckJoined();
 		StartCoroutine(lerp(startPosition, endPosition));
 	}
 	
@@ -64,8 +70,32 @@ public class UI_Club : MonoBehaviour
 		}
 	}
 	
-	public void Join() {
+	public void JoinLobby() {
 		if (attachedClub.scene.Length > 0)
 			SceneManager.LoadScene(attachedClub.scene);
+	}
+	
+	public void JoinClub()
+	{
+		if (!InClub)
+		{
+			_controller.user.userClubs.Add(attachedClub);
+		}
+		CheckJoined();
+	}
+	
+	public void LeaveClub()
+	{
+		if (InClub)
+		{
+			_controller.user.userClubs.Remove(attachedClub);
+		}
+	}
+		
+	private void CheckJoined()
+	{
+		bool inClub = InClub;
+		_joinClubButton.SetActive(!inClub);
+		_leaveClubButton.SetActive(inClub);
 	}
 }

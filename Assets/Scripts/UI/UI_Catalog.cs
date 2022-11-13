@@ -57,8 +57,7 @@ public class UI_Catalog : MonoBehaviour
 	}
 
 	public void LoadClubDetails(ClubObject club) {
-		uiClub.attachedClub = club;
-		uiClub.open();
+		uiClub.open(club);
 	}
     
 	public void Type() {
