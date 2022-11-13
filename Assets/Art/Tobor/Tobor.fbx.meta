@@ -3,7 +3,52 @@ guid: a411359bfcc00437ca63f4f6f811b567
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black
+    second: {fileID: 2100000, guid: d801bcc4c4b07f84db37b6825d4c2e9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Whtie
+    second: {fileID: 2100000, guid: bf30d7088cd888b47aac8d7fde3b4077, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Yellow
+    second: {fileID: 2100000, guid: 04460d0b97f9a6f4eafb635fcb4215cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dark grey
+    second: {fileID: 2100000, guid: d801bcc4c4b07f84db37b6825d4c2e9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glow
+    second: {fileID: 2100000, guid: aa6b29485dc53b942b6c7e2cce302bf3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grey
+    second: {fileID: 2100000, guid: d801bcc4c4b07f84db37b6825d4c2e9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: headlights
+    second: {fileID: 2100000, guid: 6e133b6b4af6bab4bb3cc4ad3ad789dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: oorange
+    second: {fileID: 2100000, guid: 1b3d16456d73d53409d858d1a9b24b85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: red
+    second: {fileID: 2100000, guid: 1b3d16456d73d53409d858d1a9b24b85, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
