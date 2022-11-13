@@ -72,7 +72,9 @@ public class UI_Catalog : MonoBehaviour
 		
 		foreach (ClubButton button in clubButtons) {
 			bool contains = button.searchableText.Contains(searchText);
-			button.meter.gameObject.SetActive(contains);
+			//button.meter.gameObject.SetActive(contains);
+			button.gameObject.SetActive(contains);
+			button.meter.gameObject.SetActive(false);
 		}
 		
 		Sort();
