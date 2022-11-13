@@ -7,7 +7,7 @@ public class ToborTank : Player
 	[SerializeField] private float _moveSpeed = 2;
 	[SerializeField] private float _turnSpeed = 2;
 	[SerializeField] private float _fireCooldown = 2;
-	[SerializeField] Projectile _projectile;
+	[SerializeField] Projectile _projectilePool;
 	[SerializeField] private Transform _firePos;
 	
 	private Rigidbody _rb;
@@ -60,7 +60,7 @@ public class ToborTank : Player
 	{
 		if (Time.time - _fireTime < _fireCooldown) return;
 		_fireTime = Time.time;
-		var projectile = Instantiate(_projectile);
+		var projectile = Instantiate(_projectilePool);
 		projectile.GetComponent<NetworkObject>().Spawn();
 		var t = projectile.transform;
 		t.position = _firePos.position;
