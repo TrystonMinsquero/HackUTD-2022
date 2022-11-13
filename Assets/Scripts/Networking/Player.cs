@@ -11,14 +11,14 @@ public class Player : NetworkBehaviour
 	{
 		if (!IsOwner)
 		{
-			Destroy(this);
+			//Destroy(this);
 			OnNotOwner();
 			return;
 		}
 		var t = GetComponent<NetworkTransform>();
 		if (t) t.InLocalSpace = true;
-		var r = GetComponent<NetworkRigidbody>();
-		if (r) t.InLocalSpace = true;
+		//var r = GetComponent<NetworkRigidbody>();
+		//if (r) t.InLocalSpace = true;
 	}
 	
 	protected virtual void OnNotOwner() {}
