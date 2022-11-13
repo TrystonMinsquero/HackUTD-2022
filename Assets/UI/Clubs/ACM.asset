@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d499061baa2c4987b2b9f8dbb718d35, type: 3}
   m_Name: ACM
   m_EditorClassIdentifier: 
-  name: Association for computing Machinery
+  name: ACM
   president: Saksham Sangraula
   description: ACM National, the Association for Computing Machinery, was founded
     in 1947 for the advancement of computing as a science and a profession, and has
@@ -41,3 +41,4 @@ MonoBehaviour:
   memberCount: 183
   startColor: {r: 0.16862746, g: 0.16078432, b: 0.65882355, a: 1}
   endColor: {r: 1, g: 0.44313726, b: 0.15686275, a: 1}
+  scene: 

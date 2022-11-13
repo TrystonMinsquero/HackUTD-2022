@@ -10,7 +10,9 @@ public class UI_Catalog : MonoBehaviour
 	[SerializeField] RectTransform content;
 	[SerializeField] ClubButton clubPrefab;
 	
-	public string searchText = "", sceneName = "scene";
+	UI_Club uiClub;
+	
+	public string searchText = "";
 	
 	List<ClubButton> clubButtons = new List<ClubButton>();
 	
@@ -21,6 +23,8 @@ public class UI_Catalog : MonoBehaviour
     // Start is called before the first frame update
     void Start()
 	{
+		uiClub = GetComponent<UI_Club>();
+		
 		foreach (Transform obj in content) {
 			Destroy(obj.gameObject);
 		}
@@ -30,8 +34,18 @@ public class UI_Catalog : MonoBehaviour
 	    	button.Apply(club);
 	    	
 	    	clubButtons.Add(button);
+	    	
+	    	string scene = club.scene;
+	    	button.button.onClick.AddListener(() => {
+	    		LoadContent(button.club);
+	    	});
 	    }
     }
+
+	public void LoadContent(ClubObject club) {
+		uiClub.attachedClub = club;
+		uiClub.open();
+	}
 
     // Update is called once per frame
     void Update()
@@ -40,6 +54,6 @@ public class UI_Catalog : MonoBehaviour
     }
     
 	public void filterButton() {
-		SceneManager.LoadScene(sceneName);
+		
 	}
 }

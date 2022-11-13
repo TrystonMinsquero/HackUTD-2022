@@ -24,3 +24,4 @@ MonoBehaviour:
   memberCount: 331
   startColor: {r: 0.94509804, g: 0.94509804, b: 0.94509804, a: 1}
   endColor: {r: 0.33333334, g: 0.33333334, b: 0.33333334, a: 1}
+  scene: Game

@@ -11,6 +11,7 @@ public class ClubButton : MonoBehaviour
 	public Image clubImage;
 	public UIGradient gradient;
 	public TextMeshProUGUI nameText, memberText;
+	public Button button;
 	
 	public void Apply(ClubObject club) {
 		this.club = club;
