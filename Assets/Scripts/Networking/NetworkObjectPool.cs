@@ -48,17 +48,17 @@ public class NetworkObjectPool : NetworkBehaviour
         ClearPool();
     }
 
-    public void OnValidate()
-    {
-        for (var i = 0; i < PooledPrefabsList.Count; i++)
-        {
-            var prefab = PooledPrefabsList[i].Prefab;
-            if (prefab != null)
-            {
-                Assert.IsNotNull(prefab.GetComponent<NetworkObject>(), $"{nameof(NetworkObjectPool)}: Pooled prefab \"{prefab.name}\" at index {i.ToString()} has no {nameof(NetworkObject)} component.");
-            }
-        }
-    }
+    // public void OnValidate()
+    // {
+    //     for (var i = 0; i < PooledPrefabsList.Count; i++)
+    //     {
+    //         var prefab = PooledPrefabsList[i].Prefab;
+    //         if (prefab != null)
+    //         {
+    //             Assert.IsNotNull(prefab.GetComponent<NetworkObject>(), $"{nameof(NetworkObjectPool)}: Pooled prefab \"{prefab.name}\" at index {i.ToString()} has no {nameof(NetworkObject)} component.");
+    //         }
+    //     }
+    // }
 
     /// <summary>
     /// Gets an instance of the given prefab from the pool. The prefab must be registered to the pool.
