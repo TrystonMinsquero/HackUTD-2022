@@ -16,19 +16,20 @@ MonoBehaviour:
   name: Artificial Intelligence Society
   shortKeyWords: 
   description: 'The Artificial Intelligence Society is one of the largest computer
-    science organizations at the University of Texas at Dallas. We are a team of
-    passionate individuals, devoted to bridging the gap between people''s awareness
-    and the world of AI. Our mission is to promote artificial intelligence education
-    at UT Dallas and in the surrounding communities.
+    science organizations in machine learning and artificial intelligence like computer
+    vision and natural language processing at the University of Texas at Dallas.
+    We are a team of passionate individuals, devoted to bridging the gap between
+    people''s awareness and the world of AI. Our mission is to promote artificial
+    intelligence education at UT Dallas and in the surrounding communities.
 
 
 
-    We have placed educational
-    outreach as one of our main priorities, to inspire others to learn more about
-    AI past the resources our organization provides. Regardless of age, major, or
-    experience, we believe that a simple appreciation of artificial intelligence
-    will become necessary as this technology advances. If you stick with us, we promise
-    to replace your fear with passion, and complexity with simplicity.'
+    We
+    have placed educational outreach as one of our main priorities, to inspire others
+    to learn more about AI past the resources our organization provides. Regardless
+    of age, major, or experience, we believe that a simple appreciation of artificial
+    intelligence will become necessary as this technology advances. If you stick
+    with us, we promise to replace your fear with passion, and complexity with simplicity.'
   categories: ECS
   memberCount: 0
   icon: {fileID: 21300000, guid: 50d573a27ea4dd04993e58092d450bdf, type: 3}
