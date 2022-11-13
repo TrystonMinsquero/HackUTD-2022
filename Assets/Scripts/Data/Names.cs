@@ -1,11 +1,13 @@
 ﻿
+using System.Text;
 using UnityEngine;
 
+
 [System.Serializable]
-public struct Names
+public class Names
 {
     [Tooltip("Paste names seperated by new lines")]
-    [SerializeField] [TextArea(1, 5)] private string namesText;
+    [SerializeField] [TextArea(1, 5)] public string namesText;
 
     private string[] _names;
 
@@ -18,6 +20,7 @@ public struct Names
 
         return _names;
     }
+    
 
     public bool Contains(string name)
     {

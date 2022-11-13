@@ -1,0 +1,1613 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d499061baa2c4987b2b9f8dbb718d35, type: 3}
+  m_Name: SGDA
+  m_EditorClassIdentifier: 
+  name: SGDA
+  president: Tryston Minsquero
+  description: 'The Student Game Developer Association is a club focused on game
+    development. We serve to create a growing community of students and industry
+    professionals to promote game development. We foster this community by hosting
+    various events to help our members learn technical and professional skills associated
+    with the games industry. '
+  categories: 0000000002000000
+  icon: {fileID: 21300000, guid: ac578087b22002e4cb7975dc54f03aeb, type: 3}
+  presidentIcon: {fileID: 0}
+  memberCount: 331
+  startColor: {r: 0.94509804, g: 0.94509804, b: 0.94509804, a: 1}
+  endColor: {r: 0.33333334, g: 0.33333334, b: 0.33333334, a: 1}
+  scene: Game
+  events:
+  - name: Fall Game Jam
+    club: SGDA
+    date: Nov 13
+    time: 7:00pm - 8:00pm
+    desc: Team up in groups of four to create a playable project and meet a few new
+      friends!
+    location: Makerspace
+  members:
+    namesText: 'Tryston Minsquero
+
+      Linus Fackler
+
+      Lucas Jaggernauth
+
+      Brandon
+      Coffey
+
+      Susana Esparza
+
+      Kassandra Littleton
+
+      Graciela
+      Hanes
+
+      Lucille Crain
+
+      Tyron Seaton
+
+      Eliezer Beck
+
+      Asher
+      Grogan
+
+      Tyasia Childers
+
+      Ervin Bryant
+
+      Carlton Dickson
+
+      Aditya
+      Dallas
+
+      Griffin Felder
+
+      Bill McNair
+
+      Jeniffer Selby
+
+      Judith
+      Deloach
+
+      Colin Applegate
+
+      Jackie Goff
+
+      Bridgette Rosenthal
+
+      Grace
+      Connelly
+
+      Keisha Joy
+
+      Garret Waldron
+
+      Marcanthony Demarco
+
+      Salvatore
+      Esquivel
+
+      Timmy Bayer
+
+      Ammon Woody
+
+      Jaida Florez
+
+      Jadon
+      Bryan
+
+      Kai Villalobos
+
+      Salena Bowden
+
+      Malia Metcalf
+
+      Zechariah
+      Fredrickson
+
+      Kara Merrill
+
+      Bridgette Zuniga
+
+      Karlie Hoff
+
+      Mickayla
+      William
+
+      Prince Madrigal
+
+      Teresa Wolf
+
+      Brisa Hills
+
+      Carol
+      Coppola
+
+      Mariano Fajardo
+
+      Judith Pollack
+
+      Turner Hull
+
+      Scarlett
+      Calhoun
+
+      Salena March
+
+      Khadijah Burnette
+
+      Reese Hagan
+
+      Shekinah
+      Vogel
+
+      Pierce Gresham
+
+      Dominic Miner
+
+      Porter Isom
+
+      Lily
+      Arteaga
+
+      Armand Nadeau
+
+      Macy Rahman
+
+      Rey Shull
+
+      Cullen
+      Parrish
+
+      Ellie Amaro
+
+      Joe McLain
+
+      Mason Gooch
+
+      Lexie
+      Ellis
+
+      Marcelo Swain
+
+      Kaeli Carlos
+
+      Brennon Mcgrew
+
+      Maxwell
+      Wilkerson
+
+      Abbie Troyer
+
+      Abel Casper
+
+      Emmett Burdick
+
+      Lawrence
+      Petersen
+
+      America Martel
+
+      Barry Howe
+
+      Deana Cordell
+
+      Ty
+      Robledo
+
+      Samara Solano
+
+      Reese Muhammad
+
+      Jade Braxton
+
+      Jaret
+      Lehman
+
+      Brian Hunt
+
+      Cassie Burgos
+
+      Kelly Leavitt
+
+      Russell
+      Griffin
+
+      Brock Ly
+
+      Mckenzie Bach
+
+      Kerry Saavedra
+
+      Melinda
+      Elrod
+
+      Brandyn Tsai
+
+      Marisa Travis
+
+      Jake Barnard
+
+      Kristin
+      Santiago
+
+      Pedro Clouse
+
+      George Ripley
+
+      Odalys Fink
+
+      Destinie
+      Ma
+
+      Branson Taylor
+
+      Jadah Paz
+
+      Walker Hershberger
+
+      Tatiana
+      Proffitt
+
+      Josephine Ramsey
+
+      Janna Fulmer
+
+      Charisma Negron
+
+      Eugene
+      Sharpe
+
+      Jessica Parkinson
+
+      Kaila Sanborn
+
+      Keyara Hanes
+
+      Kobi
+      Neal
+
+      Lora Shepherd
+
+      Savanna Allred
+
+      Malorie Quinlan
+
+      Tatum
+      Lake
+
+      Ryann Reeves
+
+      Dejuan Woods
+
+      Imani Eads
+
+      Frederick
+      Anderson
+
+      Jensen Gorman
+
+      Jerrod Pollard
+
+      Xzavier Weathers
+
+      Kailyn
+      Bustos
+
+      Kerry Zimmerman
+
+      Angel McKnight
+
+      Jacqueline Buckner
+
+      Neo
+      Poore
+
+      Jairo Zimmerman
+
+      Glenn Carden
+
+      Briley Lima
+
+      Bradford
+      Doucette
+
+      Julianna Streeter
+
+      Dandre Harris
+
+      Susana Martell
+
+      Liza
+      Amaro
+
+      Kimberly Ogle
+
+      Claire Gamez
+
+      Carla Houck
+
+      Makiya
+      Hilton
+
+      Xavier Staggs
+
+      Irving Farrar
+
+      Heidy Cerda
+
+      Kaeli
+      Matlock
+
+      Jonas Pagan
+
+      Vaughn Sauer
+
+      Micheal Amos
+
+      Liam
+      Tharp
+
+      Carissa Prewitt
+
+      Kimberly Cheng
+
+      Devonte Harley
+
+      Dymond
+      Chapman
+
+      Jamila Dubois
+
+      Santino Faulk
+
+      Melvin Mansfield
+
+      Dustin
+      Purdy
+
+      Conor Hand
+
+      Clark Singer
+
+      Kellie Luong
+
+      Shayna
+      Smart
+
+      Andrew Wallis
+
+      Jerrod Talbert
+
+      Seth Orellana
+
+      Ally
+      Gentry
+
+      Aman Aguilar
+
+      Sasha Wynne
+
+      Lisa McKenna
+
+      Stephany
+      Petersen
+
+      Darrien Mattson
+
+      Annelise Berman
+
+      Jena Weis
+
+      Keyara
+      Crews
+
+      Brayden Laird
+
+      Regan Dyer
+
+      Dameon Clawson
+
+      Kurt
+      Way
+
+      Sommer Creamer
+
+      Fabian Mendez
+
+      Mollie Early
+
+      Dajah
+      Henriquez
+
+      Braden Ragan
+
+      Ashleigh Abraham
+
+      Litzy Hannon
+
+      Mattie
+      Reedy
+
+      Jaquez Merrell
+
+      Claudia Yazzie
+
+      Rahul Goddard
+
+      Ellen
+      Westfall
+
+      Mina Baumann
+
+      Milo Crawford
+
+      Aubrie Archer
+
+      Kaelyn
+      Newsome
+
+      Katya Rains
+
+      Mitchel Canales
+
+      George Hutson
+
+      Cloe
+      Jolly
+
+      Francis Black
+
+      Ximena Milligan
+
+      Sunny Jasso
+
+      Angelica
+      Langley
+
+      Jimmie Harbin
+
+      Blaze Devine
+
+      Aurora Morales
+
+      Johnson
+      Post
+
+      Domenic Bronson
+
+      Marquez Barton
+
+      Simon Wirth
+
+      Malka
+      Rand
+
+      River Cantu
+
+      Jenny Kane
+
+      Kinsey Navarro
+
+      Kerry
+      Quick
+
+      Donte Ballard
+
+      Julio Lanham
+
+      Miya Magana
+
+      Jami
+      Cahill
+
+      Isabell Hackney
+
+      Katerina Schott
+
+      Samantha Dix
+
+      Keila
+      Lindstrom
+
+      Ezekiel Corey
+
+      Caitlynn Hopkins
+
+      Toby Clancy
+
+      Bayley
+      Matheny
+
+      Kori Galvez
+
+      Davon Ryan
+
+      Maya Huddleston
+
+      Maranda
+      Gordon
+
+      Gavin Carmichael
+
+      Amy Beckham
+
+      Myles Travis
+
+      Margaret
+      Peterson
+
+      Chad Freed
+
+      Dandre Olivo
+
+      Regina Whitehead
+
+      Ashlyn
+      Espinosa
+
+      Devyn Arevalo
+
+      Dorien Babb
+
+      Kirk Reiter
+
+      Alyson
+      Cornell
+
+      Adrianne Somers
+
+      Franco Hite
+
+      Jayce Ralston
+
+      Trent
+      Boyd
+
+      Edna Robles
+
+      Kayli Way
+
+      Bailey Pierce
+
+      Eden
+      Stringer
+
+      Kaylynn Hennessy
+
+      Baby Boland
+
+      Ashlin Brunner
+
+      Jada
+      Buck
+
+      Taylar Zamora
+
+      Mathew Churchill
+
+      Abril Byrd
+
+      Karley
+      Cassidy
+
+      Roderick Mcgrew
+
+      Miguel Graber
+
+      Kaleigh Egan
+
+      Hadley
+      Timmons
+
+      Trinity Hatch
+
+      Maryjane Graff
+
+      Tianna Oakley
+
+      Sergio
+      Reese
+
+      Tyreek Moulton
+
+      Stefani Paredes
+
+      Sarai Berry
+
+      Eleazar
+      Urbina
+
+      Ladarius Barth
+
+      Keyara Carvalho
+
+      Octavio Rayburn
+
+      Yasmin
+      Mueller
+
+      Lea Kauffman
+
+      Citlalli Cherry
+
+      Hassan Kern
+
+      Keelan
+      Wofford
+
+      Kyndal Stiles
+
+      Kaiden McLaughlin
+
+      Gerald Schaffer
+
+      Brynne
+      Brower
+
+      Ximena Schweitzer
+
+      Layla Paris
+
+      Clay Vogt
+
+      Lesli
+      Clapp
+
+      Demetrius Callahan
+
+      Ernesto Powell
+
+      Gracelyn Isaacs
+
+      Iman
+      Haywood
+
+      Diego Slack
+
+      Kya Maier
+
+      Luther Terry
+
+      Roxanna
+      Clarke
+
+      Jade Durant
+
+      Tomas Mixon
+
+      Angelique Harder
+
+      Yamile
+      Whitten
+
+      Julissa Palumbo
+
+      Kalen Powell
+
+      Callie Wetzel
+
+      Tony
+      Boyce
+
+      Nyla Ly
+
+      Leah Compton
+
+      Dorien Sandlin
+
+      Kalob
+      Thacker
+
+      Sidney Tripp
+
+      Brandon Stacey
+
+      Paloma Byrd
+
+      Trever
+      Garber
+
+      Jesse Page
+
+      Kai Mueller
+
+      Branson Ivy
+
+      Maritza
+      Moriarty
+
+      Marion Stpierre
+
+      Craig Heckman
+
+      Bridger Bateman
+
+      Jovanny
+      Madsen
+
+      Alexandro Ellis
+
+      Caylin Register
+
+      Monika Almeida
+
+      Karah
+      Gagne
+
+      Cydney Black
+
+      Kentrell Smallwood
+
+      Tyrek Molnar
+
+      Alanna
+      Lackey
+
+      Lizbeth Lea
+
+      Jacques Russell
+
+      Jayla Bratcher
+
+      Brynne
+      Baumgartner
+
+      Heriberto Olivares
+
+      Lloyd Neil
+
+      Shemar Shaw
+
+      Alize
+      Perkins
+
+      Alicia Earley
+
+      Gabrielle Travis
+
+      Dakota Vasquez
+
+      Kiley
+      Card
+
+      Sammy Andrews
+
+      Celia Gibson
+
+      Brook McManus
+
+      Antonio
+      Shepard
+
+      Sally Hurd
+
+      Mariana Nagy
+
+      Tucker Madison
+
+      Kamron
+      Schroeder
+
+      Alexia Terry
+
+      Ira Woodward
+
+      Anabelle Clevenger
+
+      Ansley
+      Gallo
+
+      Zachariah Garnett
+
+      Warren Taylor
+
+      Kendal Kasper
+
+      Kolby
+      Ragan
+
+      Beatrice Addison
+
+      Christy Minton
+
+      Shelbi Choate
+
+      Rashad
+      Low
+
+      Juana Worrell
+
+      Diane Troyer
+
+      Ruby Perry
+
+      Alek
+      Hoffmann
+
+      Angeline Hester
+
+      Giovanny Sturgill
+
+      Giovanni
+      Blackmon
+
+      Harvey Dominguez
+
+      Arjun Wall
+
+      Anjali Nance
+
+      Jillian
+      Graff
+
+      Jordi Wetzel
+
+      Zackery Valentine
+
+      Tea Garber
+
+      Amani
+      Hutson
+
+      Aria Padron
+
+      Alani Razo
+
+      Jerod Oswald
+
+      Annalee
+      Li
+
+      Abigail Mondragon
+
+      Gregorio Pham
+
+      Lucia Kurtz
+
+      Reilly
+      Copeland
+
+      Naomi Jonas
+
+      Randy Orlando
+
+      Montana Aldridge
+
+      Dario
+      Cummins
+
+      Briar Wolff
+
+      Kellen Derosa
+
+      Ezra Crespo
+
+      Vicente
+      Slade
+
+      Krysta Sherman
+
+      Tyasia Godinez
+
+      Leyla Sepulveda
+
+      Zachary
+      Neff
+
+      Levi Leyva
+
+      Mohamed Denton
+
+      Luther Popp
+
+      Monet
+      Dugan
+
+      Hakeem Oglesby
+
+      Leonel Harter
+
+      Abigale Heck
+
+      Kody
+      McGraw
+
+      Kelsey Winter
+
+      Joanne Felton
+
+      Dane Maurer
+
+      Edgardo
+      Sumner
+
+      Darlene Bourgeois
+
+      Lorenzo Lovell
+
+      Jane Nicholson
+
+      Trenten
+      Bowser
+
+      Winter Davison
+
+      Trever Cain
+
+      Timmy Kuhn
+
+      Cailin
+      Benavides
+
+      Montana Goble
+
+      Brian Yancey
+
+      Blaze Bolin
+
+      Stefany
+      Higginbotham
+
+      Tracy Tuttle
+
+      Bowen Minton
+
+      Chelsie Woo
+
+      Easton
+      Marion
+
+      Natalia Barker
+
+      Hector Hostetler
+
+      Tyrell Fuller
+
+      Nathalie
+      Gipson
+
+      Montana Benner
+
+      Trenton Bagwell
+
+      Dixie Villanueva
+
+      Alyssia
+      Kruse
+
+      Sana Bunting
+
+      Araceli Shelley
+
+      Alexia Barrera
+
+      Deisy
+      Holley
+
+      Rianna Penny
+
+      Chancellor Fortner
+
+      Marcelo Hurley
+
+      Abbie
+      Roche
+
+      Justin Sutton
+
+      Rhiannon Burkett
+
+      Brooke Munn
+
+      Jamie
+      Soria
+
+      Steven Radford
+
+      Byron Moy
+
+      Daryl Clinton
+
+      Aric
+      Cahill
+
+      Rasheed Hallman
+
+      Wade Sullivan
+
+      Cassidy Engel
+
+      Alexandre
+      Zeigler
+
+      Braydon Bassett
+
+      Noemi Sandoval
+
+      Marisol Champion
+
+      Malcolm
+      Collazo
+
+      Lesli Jansen
+
+      Kerry Matson
+
+      Yajaira Wilkinson
+
+      Addie
+      Bigelow
+
+      Rita Kang
+
+      Luca Rhoads
+
+      Christopher Post
+
+      Bryan
+      Franks
+
+      Maximilian Haggard
+
+      Benito Gannon
+
+      Caiden Leggett
+
+      Tessa
+      Stanford
+
+      Alexzander Cabrera
+
+      Jalisa Roland
+
+      Clint Anthony
+
+      Keyanna
+      Oliveira
+
+      Margarita Hong
+
+      Derick Burden
+
+      Lilliana Stanfield
+
+      Amara
+      Salter
+
+      Lauryn Singletary
+
+      Melisa Wynn
+
+      Brent McGuire
+
+      Citlali
+      Gillis
+
+      Aspen Chamberlain
+
+      Ayana Garrison
+
+      Randy Spears
+
+      Everardo
+      Hedges
+
+      Caylee Eldridge
+
+      Isela Ponce
+
+      Malka Echols
+
+      Johan
+      Acevedo
+
+      Delanie Kelsey
+
+      Reagan Layman
+
+      Ivan Stout
+
+      Tristan
+      Trahan
+
+      Fidel Hough
+
+      Korbin Otero
+
+      Syed Nunes
+
+      Zaira
+      Patterson
+
+      Anais Brinson
+
+      Caitlyn Coley
+
+      Helen Donovan
+
+      Kole
+      Sadler
+
+      Annamarie Erb
+
+      Melina Kirchner
+
+      Layla Carrera
+
+      Jarod
+      Miranda
+
+      Neha Johnson
+
+      Alan Snell
+
+      Zara Rudolph
+
+      Simone
+      Hackett
+
+      Kurt Israel
+
+      Louis Hardesty
+
+      Claudia Shull
+
+      Katharine
+      McCauley
+
+      Julio Pittman
+
+      Matthias Williamson
+
+      David Davidson
+
+      Rayshawn
+      Clapp
+
+      Sophie Reno
+
+      Kelley Chamberlin
+
+      Asha Southard
+
+      Megan
+      Bean
+
+      Aliyah Thornton
+
+      Viviana Bowen
+
+      Ivan Temple
+
+      Arthur
+      Higgins
+
+      Tai Hopson
+
+      Makayla Engle
+
+      Dyllan Denton
+
+      Dora
+      Coffin
+
+      Christopher Cecil
+
+      Jefferson Grubb
+
+      Donna Taggart
+
+      Logan
+      Guerrero
+
+      Emilia Shafer
+
+      Damion Dominguez
+
+      Carmen Hu
+
+      Lucero
+      Pease
+
+      Kathleen Bermudez
+
+      Parker Saldivar
+
+      Alejandro Sears
+
+      Jajuan
+      Lockwood
+
+      Infant Vail
+
+      Joseph Friedman
+
+      Jackie Goebel
+
+      Alvin
+      Crutchfield
+
+      Sana Snyder
+
+      Aric Rapp
+
+      Louis Kerns
+
+      Mario
+      Casper
+
+      Rebekah Marsh
+
+      Isabela Arce
+
+      Katheryn Gaffney
+
+      Lyndsay
+      Nettles
+
+      Wilfredo Flaherty
+
+      Areli Mears
+
+      Irene Aviles
+
+      Finn
+      Ainsworth
+
+      Barry Shuler
+
+      Lynette Gough
+
+      Paloma McElroy
+
+      Hakeem
+      Hubbard
+
+      Marlene Provost
+
+      Hayli Layton
+
+      Tevin Goldman
+
+      Jerome
+      Foust
+
+      Doris Britt
+
+      Kole Layton
+
+      Shelly Vera
+
+      Dwight
+      Seeley
+
+      Riley Roberts
+
+      Julien Will
+
+      Jackie Woods
+
+      Christian
+      Canales
+
+      Kortney Richey
+
+      Shivani Gamboa
+
+      Ronald Osorio
+
+      Arjun
+      Downing
+
+      Kyra Hundley
+
+      Maci Burley
+
+      Unique Ripley
+
+      Bayleigh
+      Becerra
+
+      Brenda Carmichael
+
+      Emmanuel Dubois
+
+      Santino Padilla
+
+      Allan
+      Lockett
+
+      Trayvon Hoppe
+
+      Scarlett Shockley
+
+      Jenifer Shapiro
+
+      Ahmad
+      Fischer
+
+      Dallin Ling
+
+      Lila Riley
+
+      Betsy Phelan
+
+      Aaron
+      Byrne
+
+      Alli Skaggs
+
+      Tristen Dobson
+
+      Jaya Burns
+
+      Monserrat
+      Irving
+
+      Jamaal Gant
+
+      Gilberto Lawless
+
+      Robin Paquette
+
+      Ryan
+      Harlan
+
+      Ingrid Clary
+
+      Rivka Roper
+
+      Giavanna Babb
+
+      Astrid
+      Medley
+
+      Niko Kimble
+
+      Thomas Zhu
+
+      Saige Alcala
+
+      Jacquelyn
+      Ledesma
+
+      Derek Saldivar
+
+      Shea Lowery
+
+      Gracelyn Davey
+
+      Ansley
+      Araujo
+
+      Anastacia Yang
+
+      Leonardo Sturgeon
+
+      Briar Breaux
+
+      Jessie
+      Connell
+
+      Anisha Simpson
+
+      Dylon Foltz
+
+      Madeline Silva
+
+      Estefania
+      Dillon
+
+      Jordin Sauceda
+
+      Kelli Linder
+
+      Tracey Bass
+
+      Thalia
+      Kish
+
+      Dandre Schell
+
+      Diane McWilliams
+
+      Aniya Jett
+
+      Caley
+      Clevenger
+
+      Emiliano Ripley
+
+      Kellen Galvan
+
+      Valerie Bender
+
+      Cassidy
+      Poe
+
+      Lilly Stone
+
+      Jaiden Byler
+
+      Trinity Duckworth
+
+      Karly
+      Baldwin
+
+      Malcolm Babb
+
+      Romeo Frazier
+
+      Brenda Connor
+
+      Jordan
+      Wilde
+
+      Tevin Beckham
+
+      Maria Sizemore
+
+      Alaina Fajardo
+
+      Jim
+      Trahan
+
+      Lorraine Madden
+
+      Daisy Acker
+
+      Raekwon Kohl
+
+      Deborah
+      Cote
+
+      Pablo Perkins
+
+      Tracy Crutchfield
+
+      Marla Finley
+
+      Janeth
+      Lightfoot
+
+      Micayla Bonner
+
+      Haven Keel
+
+      Ashlynn Hidalgo
+
+      Juancarlos
+      Sargent
+
+      Aleena Duffy
+
+      Melia Barney
+
+      Micah Hickman
+
+      Rashawn
+      Muse
+
+      Joyce Longoria
+
+      Jaclyn Hu
+
+      Niya Weinberg
+
+      Johan
+      Crews
+
+      Toni Delong
+
+      Jackelyn Gonzalez
+
+      Hayli Middleton
+
+      Janice
+      Younger
+
+      Ivory Kunz
+
+      Sylvia Field
+
+      Maribel Schwarz
+
+      Uriah
+      Starr
+
+      Nicolle Ness
+
+      Tabitha Dukes
+
+      Kelsy Bingham
+
+      Jamya
+      Orozco
+
+      Cecilia Gilbertson
+
+      Mariam Hightower
+
+      Coy Villareal
+
+      Maryam
+      Burnside
+
+      Auston MacDonald
+
+      Joan Denton
+
+      Joslyn Daugherty
+
+      Macey
+      Lai
+
+      Cristian Urban
+
+      Neal Medrano
+
+      Gloria Graf
+
+      Larry
+      Eller
+
+      Nataly Swann
+
+      Tyreek Ennis
+
+      Izabella Herrmann
+
+      Camryn
+      Yarbrough
+
+      Kolten Harley
+
+      Porter Dutton
+
+      Moriah Peyton
+
+      Brian
+      McDaniel
+
+      Tai Davis
+
+      Ashleigh Vang
+
+      Brycen Callaway
+
+      Tonya
+      Woo
+
+      Stewart March
+
+      Brenton Cahill
+
+      Emerald Pease
+
+      Ava
+      Goetz
+
+      Lissette Bonds
+
+      Fletcher Lindsey
+
+      Kurtis Woody
+
+      Karley
+      Bernard
+
+      Cali Bales
+
+      Diego Burgos
+
+'

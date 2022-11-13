@@ -1,4 +1,5 @@
 ﻿using System;
+using Unity.Netcode;
 using UnityEngine;
 
 public class ToborTank : Player
@@ -6,9 +7,9 @@ public class ToborTank : Player
 	[SerializeField] private float _moveSpeed = 2;
 	[SerializeField] private float _turnSpeed = 2;
 	[SerializeField] private float _fireCooldown = 2;
+	[SerializeField] Projectile _projectilePool;
 	[SerializeField] private Transform _firePos;
 	
-	private ProjectilePool _projectilePool;
 	private Rigidbody _rb;
 	private float _forwardAmount;
 	private float _turnAmount;
@@ -17,7 +18,6 @@ public class ToborTank : Player
 	private void Awake()
 	{
 		_rb = GetComponent<Rigidbody>();
-		_projectilePool = GetComponentInChildren<ProjectilePool>();
 	}
 	
 	private void Update()
@@ -60,7 +60,9 @@ public class ToborTank : Player
 	{
 		if (Time.time - _fireTime < _fireCooldown) return;
 		_fireTime = Time.time;
-		var t = _projectilePool.GetProjectile().transform;
+		var projectile = Instantiate(_projectilePool);
+		projectile.GetComponent<NetworkObject>().Spawn();
+		var t = projectile.transform;
 		t.position = _firePos.position;
 		t.rotation = _firePos.rotation;
 	}
