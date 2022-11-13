@@ -15,4 +15,6 @@ public class ClubObject : ScriptableObject
 	public Color startColor, endColor;
 	
 	public string scene;
+	
+	public List<EventObject> events;
 }

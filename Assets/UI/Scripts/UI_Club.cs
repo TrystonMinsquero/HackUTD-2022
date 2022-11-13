@@ -29,7 +29,7 @@ public class UI_Club : MonoBehaviour
 	    
 	    if (attachedClub != null) {
 	    	name = attachedClub.name;
-	    	pres = attachedClub.president;
+	    	pres = $"President\n<b>{attachedClub.president}";
 	    	desc = attachedClub.description;
 	    	presImage = attachedClub.presidentIcon;
 	    }
