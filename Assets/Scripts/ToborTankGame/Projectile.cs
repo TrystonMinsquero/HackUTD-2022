@@ -26,6 +26,5 @@ public class Projectile : MonoBehaviour
 			Debug.Log("Destroy other tank");
 		}
 		
-		Destroy(gameObject);
 	}
 }
