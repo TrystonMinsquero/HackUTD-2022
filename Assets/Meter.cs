@@ -12,17 +12,19 @@ public class Meter : MonoBehaviour
     [SerializeField] private RectTransform bar;
     private Image[] images;
 
+    public float Value { get; set; }
     private float _maxVal;
 
     private void Awake()
     {
         images = GetComponentsInChildren<Image>();
         _maxVal = bar.sizeDelta.x;
-        SetValue(.25f);
+        SetValue(1);
     }
 
     public void SetValue(float value)
     {
+        Value = value;
         bar.sizeDelta = new Vector2(value * _maxVal, bar.sizeDelta.y);
         foreach (var image in images)
         {
