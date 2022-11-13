@@ -54,7 +54,7 @@ MonoBehaviour:
   _moveSpeed: 1
   _turnSpeed: 2
   _fireCooldown: 2
-  _projectilePrefab: {fileID: 1825958111715007404, guid: 920c7247f9726204f96a13f15ce1a432, type: 3}
+  _projectilePrefab: {fileID: 1825958111715007405, guid: 920c7247f9726204f96a13f15ce1a432, type: 3}
   _firePos: {fileID: 8304385322976194393}
 --- !u!114 &3724913131727296698
 MonoBehaviour:

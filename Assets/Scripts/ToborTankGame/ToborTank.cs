@@ -7,7 +7,7 @@ public class ToborTank : Player
 	[SerializeField] private float _moveSpeed = 2;
 	[SerializeField] private float _turnSpeed = 2;
 	[SerializeField] private float _fireCooldown = 2;
-	[SerializeField] Projectile _projectilePrefab;
+	[SerializeField] GameObject _projectilePrefab;
 	[SerializeField] private Transform _firePos;
 	
 	private Rigidbody _rb;
@@ -29,7 +29,7 @@ public class ToborTank : Player
 		{
 			if (Time.time - _fireTime < _fireCooldown) return;
 			_fireTime = Time.time;
-			FireServerRPC();
+			Fire();
 		}
 	}
 	
@@ -60,12 +60,13 @@ public class ToborTank : Player
 
 	private void Fire()
 	{
-		// if (Time.time - _fireTime < _fireCooldown) return;
-		// _fireTime = Time.time;
-		// var t = projectile.transform;
-		// t.position = _firePos.position;
-		// t.rotation = _firePos.rotation;
-		// FireServerRPC();
+		var projectile = NetworkObjectPool.Singleton.GetNetworkObject(_projectilePrefab, _firePos.position, _firePos.rotation );
+		projectile.GetComponent<Projectile>().destroyMeDaddy += CleanProjectile;
+	}
+
+	private void CleanProjectile(NetworkObject projectile)
+	{
+		NetworkObjectPool.Singleton.ReturnNetworkObject(projectile, _projectilePrefab);
 	}
 
 	[ServerRpc(RequireOwnership = false)]
@@ -83,7 +84,6 @@ public class ToborTank : Player
 
 	private void FireProjectile(Projectile projectile)
 	{
-		
 		var t = projectile.transform;
 		t.position = _firePos.position;
 		t.rotation = _firePos.rotation;

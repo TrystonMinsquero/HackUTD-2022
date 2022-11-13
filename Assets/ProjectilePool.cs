@@ -32,7 +32,7 @@ public class ProjectilePool : MonoBehaviour
     {
         if (unusedProjectiles.Count <= 0) return null;
         var projectile = unusedProjectiles.Pop();
-        projectile.destroyMeDaddy += ResetProjectile;
+        // projectile.destroyMeDaddy += ResetProjectile;
         return projectile;
     }
 }
