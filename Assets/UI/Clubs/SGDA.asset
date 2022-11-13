@@ -20,4 +20,7 @@ MonoBehaviour:
     games industry. '
   categories: 0000000002000000
   icon: {fileID: 21300000, guid: ac578087b22002e4cb7975dc54f03aeb, type: 3}
+  presidentIcon: {fileID: 0}
   memberCount: 331
+  startColor: {r: 0.94509804, g: 0.94509804, b: 0.94509804, a: 1}
+  endColor: {r: 0.33333334, g: 0.33333334, b: 0.33333334, a: 1}

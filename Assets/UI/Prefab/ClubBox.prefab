@@ -244,7 +244,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 0
+  m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -285,6 +285,7 @@ GameObject:
   - component: {fileID: 5585998531435804796}
   - component: {fileID: 5585998531435804797}
   - component: {fileID: 5585998531435804787}
+  - component: {fileID: 7650087131401697047}
   m_Layer: 5
   m_Name: ClubBox
   m_TagString: Untagged
@@ -460,6 +461,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 1
+--- !u!114 &7650087131401697047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5585998531435804795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe6781daf1a6e438eb613d6849465464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  club: {fileID: 0}
+  clubImage: {fileID: 7025980502700864354}
+  gradient: {fileID: 5585998533076046801}
+  nameText: {fileID: 2045423120344797549}
+  memberText: {fileID: 6929771849305088848}
 --- !u!1 &5585998533076046812
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,8 +590,8 @@ MonoBehaviour:
   blendMode: 0
   intensity: 1
   gradientType: 0
-  linearColor1: {r: 1, g: 0.7644038, b: 0.015686274, a: 1}
-  linearColor2: {r: 1, g: 0.2688679, b: 0.43614036, a: 1}
+  linearColor1: {r: 0.16481104, g: 0.16078429, b: 0.65882355, a: 1}
+  linearColor2: {r: 1, g: 0.44343317, b: 0.15566039, a: 1}
   cornerColorUpperLeft: {r: 1, g: 0, b: 0, a: 1}
   cornerColorUpperRight: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   cornerColorLowerRight: {r: 0, g: 1, b: 0, a: 1}
