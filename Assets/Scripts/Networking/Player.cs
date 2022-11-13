@@ -5,11 +5,10 @@ using Unity.Netcode;
 
 public class Player : NetworkBehaviour
 {
-	private void OnNetworkSpawn()
+	public override void OnNetworkSpawn()
 	{
 		if (!IsOwner)
 		{
-			Debug.Log("Is not owner", gameObject);
 			Destroy(this);
 		}
 	}
