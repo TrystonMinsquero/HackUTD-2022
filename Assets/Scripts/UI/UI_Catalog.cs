@@ -111,7 +111,7 @@ public class UI_Catalog : MonoBehaviour
 	}
 	
 	public int CompareMeter(ClubButton a, ClubButton b) {
-		return a.meter.Value.CompareTo(b.meter.Value);
+		return b.meter.Value.CompareTo(a.meter.Value);
 	}
 	
 	public void SearchAI() {
