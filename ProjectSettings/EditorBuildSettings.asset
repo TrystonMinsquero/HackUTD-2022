@@ -5,13 +5,20 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: a3024be25f76a9a49a0abf7ab77ff389
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Game.unity
     guid: 3166541eeba9f624e858b22d327b4271
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TankGame.unity
     guid: d0cb603c6ea1d5d45bf355c7804b8295
-  m_configObjects: {}
+  - enabled: 0
+    path: Assets/QR/Scenes/ReadQRCode.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 5e4777f64f6294c888e2d8630ae3a34e, type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: c061cee8013354328b681065bdce2d24, type: 2}
+    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: 2a0a29adc262e474f937e392d68cad00, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: e2e39610bd02147868d3c795651fb705, type: 2}
