@@ -7,6 +7,7 @@ public class UI_Catalog : MonoBehaviour
 {
 	
 	[SerializeField] List<ClubObject> clubs = new List<ClubObject>();
+	[SerializeField] 
 	
 	public string searchText = "", sceneName = "scene";
 	

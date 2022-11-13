@@ -19,6 +19,7 @@ public class FlexibleGridLayout : LayoutGroup
 	public Vector2 cellSize;
 	public bool fitX;
 	public bool fitY;
+	public bool square;
 
 	public override void CalculateLayoutInputHorizontal()
 	{
@@ -56,7 +57,10 @@ public class FlexibleGridLayout : LayoutGroup
 		var cellWidth = rectTransform.rect.width / gridWidth - (spacing.x / gridWidth) * (gridWidth - 1) - (padding.left + padding.right + 0f) / gridWidth;
 		var cellHeight = rectTransform.rect.height / gridHeight - (spacing.y / gridWidth) * (gridWidth - 1) - (padding.top + padding.bottom + 0f) / gridHeight;
 
-		if (fitX) cellSize.x = cellWidth;
+		if (fitX) { 
+			cellSize.x = cellWidth;
+			if (square) cellSize.y = cellSize.x;
+		}
 		if (fitY) cellSize.y = cellHeight;
 
 		for (int i = 0; i < rectChildren.Count; i++)
