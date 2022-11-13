@@ -24,7 +24,7 @@ public class Snake : MonoBehaviour
     private void Start()
     {
         ResetState();
-        Time.fixedDeltaTime = 0.2f;
+        Time.fixedDeltaTime = 0.15f;
     }
 
     private void FixedUpdate()
