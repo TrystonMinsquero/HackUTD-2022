@@ -256,6 +256,7 @@ GameObject:
   - component: {fileID: 319951837382106904}
   - component: {fileID: 319951837382106917}
   - component: {fileID: 319951837382106918}
+  - component: {fileID: -5168866721547476184}
   m_Layer: 5
   m_Name: Event
   m_TagString: Untagged
@@ -372,6 +373,24 @@ MonoBehaviour:
   baked: 0
   modifiedFromInspector: 0
   bakedShadows: []
+--- !u!114 &-5168866721547476184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319951837382106907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e939de1f11343fe9967e52ffef6036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 319951837403952133}
+  clubText: {fileID: 319951837569038990}
+  dateText: {fileID: 319951836803246237}
+  timeText: {fileID: 319951838503526766}
+  descText: {fileID: 319951838355728318}
+  locationText: {fileID: 319951837750192227}
 --- !u!1 &319951837403952135
 GameObject:
   m_ObjectHideFlags: 0

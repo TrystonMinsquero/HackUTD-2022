@@ -2182,6 +2182,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   events: []
+  eventPrefab: {fileID: -5168866721547476184, guid: 4f42c8e1b2a5f44bbb006a0db1728ec2, type: 3}
+  eventContent: {fileID: 1182190290}
 --- !u!1 &908766834
 GameObject:
   m_ObjectHideFlags: 0
