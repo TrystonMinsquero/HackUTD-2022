@@ -15,11 +15,11 @@ using Unity.Services.Relay.Models;
 public class NetworkConnect : MonoBehaviour
 {	
 	[SerializeField] private bool _debug;
+	[SerializeField] private string JoinCodeKey = "j";
 	
 	private Lobby _connectedLobby;
 	private QueryResponse _lobbies;
 	private UnityTransport _transport;
-	private const string JoinCodeKey = "j";
 	private const int MaxPlayers = 100;
 	private string _playerId;
 	
