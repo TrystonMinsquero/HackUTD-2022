@@ -9,5 +9,6 @@ public class User : ScriptableObject
 	public string firstName;
 	public string lastName;
 	public List<string> friends;
-	public List<ClubObject> userClubs; 
+	public List<ClubObject> userClubs;
+	public ClubObject ownClub;
 }
