@@ -22,6 +22,9 @@ public class ToborTank : Player
 	
 	private void Update()
 	{
+		if (!IsOwner) return;
+		
+		
 		_forwardAmount = InputControls.LeftAxisInput.y;
 		_turnAmount = InputControls.LeftAxisInput.x;
 		
@@ -35,6 +38,8 @@ public class ToborTank : Player
 	
 	private void FixedUpdate()
 	{
+		if (!IsOwner) return;
+		
 		Turn(_turnSpeed);
 		Move(_moveSpeed);
 	}
