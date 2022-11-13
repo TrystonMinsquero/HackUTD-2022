@@ -93,7 +93,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 41.25
   m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 51.2
   m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -281,11 +281,11 @@ GameObject:
   - component: {fileID: 5585998531435804792}
   - component: {fileID: 5585998531435804799}
   - component: {fileID: 5585998531435804798}
+  - component: {fileID: 7650087131401697047}
   - component: {fileID: 5585998531435804786}
   - component: {fileID: 5585998531435804796}
   - component: {fileID: 5585998531435804797}
   - component: {fileID: 5585998531435804787}
-  - component: {fileID: 7650087131401697047}
   - component: {fileID: 8679243183418955245}
   m_Layer: 5
   m_Name: ClubBox
@@ -355,6 +355,25 @@ MonoBehaviour:
   m_PixelsPerUnitMultiplier: 1
   borderWidth: 0
   falloffDistance: 2
+--- !u!114 &7650087131401697047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5585998531435804795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe6781daf1a6e438eb613d6849465464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  club: {fileID: 0}
+  clubImage: {fileID: 7025980502700864354}
+  gradient: {fileID: 5585998533076046801}
+  nameText: {fileID: 2045423120344797549}
+  memberText: {fileID: 6929771849305088848}
+  button: {fileID: 8679243183418955245}
+  searchableText: 
 --- !u!114 &5585998531435804786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,25 +481,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 1
---- !u!114 &7650087131401697047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5585998531435804795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe6781daf1a6e438eb613d6849465464, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  club: {fileID: 0}
-  clubImage: {fileID: 7025980502700864354}
-  gradient: {fileID: 5585998533076046801}
-  nameText: {fileID: 2045423120344797549}
-  memberText: {fileID: 6929771849305088848}
-  button: {fileID: 8679243183418955245}
-  searchableText: 
 --- !u!114 &8679243183418955245
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -17,4 +17,10 @@ public class ClubObject : ScriptableObject
 	public string scene;
 	
 	public List<EventObject> events;
+	public Names members;
+
+	public string[] GetFriends(User user)
+	{
+		return members.GetNames();
+	}
 }
