@@ -10,8 +10,8 @@ public class ToborTank : Player
 	[SerializeField] GameObject _projectilePrefab;
 	[SerializeField] private Transform _firePos;
 	
-	NetworkVariable<Vector3> pos = new NetworkVariable<Vector3>();
-	NetworkVariable<Quaternion> rot = new NetworkVariable<Quaternion>();
+	NetworkVariable<Vector3> pos = new NetworkVariable<Vector3>(Vector3.zero,NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
+	NetworkVariable<Quaternion> rot = new NetworkVariable<Quaternion>(Quaternion.identity,NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
 	
 	private Rigidbody _rb;
 	private float _forwardAmount;
@@ -26,6 +26,7 @@ public class ToborTank : Player
 	private void Update()
 	{
 		if (!IsOwner) {
+			Debug.Log(pos.Value);
 			transform.position = Vector3.Lerp(transform.position, pos.Value, Time.deltaTime * 5);
 			transform.rotation = Quaternion.Lerp(transform.rotation, rot.Value, Time.deltaTime * 5);
 			
