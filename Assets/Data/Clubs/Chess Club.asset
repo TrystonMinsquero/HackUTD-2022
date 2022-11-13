@@ -12,18 +12,143 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d499061baa2c4987b2b9f8dbb718d35, type: 3}
   m_Name: Chess Club
   m_EditorClassIdentifier: 
-  abbreviation: 
-  name: 
+  abbreviation: Chess Club
+  name: Chess Club UT Dallas
   shortKeyWords: 
-  description: 
-  categories: 
+  description: 'UT Dallas Chess Club is a place where you can meet every week to
+    improve your chess skills, attend tournaments and events, participate in grandmaster
+    lessons and simuls, or just play a game of chess with your friend
+
+
+
+
+
+'
+  categories: Sports
   memberCount: 0
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 670344081771c7a4d91e06d822c91960, type: 3}
   president: 
   presidentIcon: {fileID: 0}
-  startColor: {r: 0, g: 0, b: 0, a: 0}
-  endColor: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
+  endColor: {r: 0, g: 0.5294118, b: 0.31764707, a: 1}
   scene: 
   events: []
   members:
-    namesText: 
+    namesText: 'Carlton Dickson
+
+      Kassandra Littleton
+
+      Griffin Felder
+
+      Kai
+      Villalobos
+
+      Teresa Wolf
+
+      Judith Deloach
+
+      Asher Grogan
+
+      Jaida
+      Florez
+
+      Scarlett Calhoun
+
+      Zechariah Fredrickson
+
+      Salvatore
+      Esquivel
+
+      Tyasia Childers
+
+      Ervin Bryant
+
+      Keisha Joy
+
+      Prince
+      Madrigal
+
+      Jeniffer Selby
+
+      Lucille Crain
+
+      Grace Connelly
+
+      Marcanthony
+      Demarco
+
+      Kara Merrill
+
+      Carol Coppola
+
+      Brandon Coffey
+
+      Linus
+      Fackler
+
+      Reese Hagan
+
+      Bridgette Zuniga
+
+      Bill McNair
+
+      Judith
+      Pollack
+
+      Susana Esparza
+
+      Bridgette Rosenthal
+
+      Jackie Goff
+
+      Karlie
+      Hoff
+
+      Ammon Woody
+
+      Garret Waldron
+
+      Malia Metcalf
+
+      Shekinah
+      Vogel
+
+      Brisa Hills
+
+      Mariano Fajardo
+
+      Eliezer Beck
+
+      Mickayla
+      William
+
+      Colin Applegate
+
+      Tyron Seaton
+
+      Graciela Hanes
+
+      Aditya
+      Dallas
+
+      Salena March
+
+      Turner Hull
+
+      Timmy Bayer
+
+      Jadon
+      Bryan
+
+      Khadijah Burnette
+
+      Tryston Minsquero
+
+      Salena Bowden
+
+      Pierce
+      Gresham
+
+      Lucas Jaggernauth
+
+'

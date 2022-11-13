@@ -12,18 +12,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d499061baa2c4987b2b9f8dbb718d35, type: 3}
   m_Name: Duelists
   m_EditorClassIdentifier: 
-  abbreviation: 
-  name: 
+  abbreviation: UTDuelists
+  name: UTDuelists
   shortKeyWords: 
-  description: 
-  categories: 
+  description: "UTDuelists is a student led organization centered around the anime
+    and card game known as,\u201CYu-Gi-Oh!\u201D \r\n\r\nWe welcome all members with
+    duel tournaments, trading, casual, and competitive play. The club brings members
+    together to explore their interest in\u201CYu-Gi-Oh!\u201D with weekly meetings
+    and monthly events. \r\n\r\nUTDuelists hopes to create life-long bonds and friendships
+    with its members."
+  categories: Sports
   memberCount: 0
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: cf4ac28cc1be23a45b867a7978bf50df, type: 3}
   president: 
   presidentIcon: {fileID: 0}
-  startColor: {r: 0, g: 0, b: 0, a: 0}
-  endColor: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0.9607844, g: 0.76470596, b: 0.08235294, a: 1}
+  endColor: {r: 0.6313726, g: 0.27058825, b: 0.03137255, a: 1}
   scene: 
   events: []
   members:
-    namesText: 
+    namesText: 'Susana Esparza
+
+      Tryston Minsquero
+
+      Brandon Coffey
+
+      Graciela
+      Hanes
+
+      Linus Fackler
+
+      Kassandra Littleton
+
+      Lucille Crain
+
+      Lucas
+      Jaggernauth
+
+'

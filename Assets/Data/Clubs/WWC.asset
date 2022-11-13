@@ -12,18 +12,292 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d499061baa2c4987b2b9f8dbb718d35, type: 3}
   m_Name: WWC
   m_EditorClassIdentifier: 
-  abbreviation: 
-  name: 
+  abbreviation: WWC
+  name: Women Who Compute
   shortKeyWords: 
-  description: 
-  categories: 
+  description: "We support women in STEM fields. We invite people from all different
+    types of companies who specialize in Computer science to come talk to our members.\r\n\r\nTo
+    cultivate a community of female engineering and computer science students at
+    UT Dallas. \r\n\r\nTo provide mentorship and support to women in computing\r\n\r\nTo
+    provide personal and professional development\r\n\r\nTo encourage women to pursue
+    a career in these fields, and make them aware of the different opportunities
+    that are out there.\r\n\r\nWomen Who Compute organization promotes, celebrates
+    and supports females in technology in our community."
+  categories: ECS
   memberCount: 0
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 5d84b670ecae96c4b8b669b6b48305ae, type: 3}
   president: 
   presidentIcon: {fileID: 0}
-  startColor: {r: 0, g: 0, b: 0, a: 0}
-  endColor: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0.75294125, g: 0.8705883, b: 0.8431373, a: 1}
+  endColor: {r: 0.9333334, g: 0.7137255, b: 0.7372549, a: 1}
   scene: 
   events: []
   members:
-    namesText: 
+    namesText: 'Brandon Coffey
+
+      Marisa Travis
+
+      Destinie Ma
+
+      Lucas
+      Jaggernauth
+
+      Abbie Troyer
+
+      Pierce Gresham
+
+      Mickayla William
+
+      Bridgette
+      Rosenthal
+
+      Jadah Paz
+
+      Porter Isom
+
+      Ammon Woody
+
+      Mckenzie
+      Bach
+
+      Aditya Dallas
+
+      Maxwell Wilkerson
+
+      Tyasia Childers
+
+      Khadijah
+      Burnette
+
+      Grace Connelly
+
+      Lucille Crain
+
+      Ervin Bryant
+
+      Brian
+      Hunt
+
+      Imani Eads
+
+      Linus Fackler
+
+      Carlton Dickson
+
+      Tatiana
+      Proffitt
+
+      Mason Gooch
+
+      Ellie Amaro
+
+      Branson Taylor
+
+      Marcanthony
+      Demarco
+
+      Asher Grogan
+
+      Samara Solano
+
+      Eliezer Beck
+
+      Xzavier
+      Weathers
+
+      Turner Hull
+
+      Salena Bowden
+
+      Pedro Clouse
+
+      Dominic
+      Miner
+
+      Jadon Bryan
+
+      Brennon Mcgrew
+
+      Jackie Goff
+
+      Tryston
+      Minsquero
+
+      Shekinah Vogel
+
+      Scarlett Calhoun
+
+      Kerry Saavedra
+
+      Cassie
+      Burgos
+
+      Tyron Seaton
+
+      Teresa Wolf
+
+      Ryann Reeves
+
+      Jade
+      Braxton
+
+      Susana Esparza
+
+      Karlie Hoff
+
+      Kristin Santiago
+
+      Reese
+      Hagan
+
+      Tatum Lake
+
+      Kaeli Carlos
+
+      America Martel
+
+      Charisma
+      Negron
+
+      Salvatore Esquivel
+
+      Carol Coppola
+
+      Janna Fulmer
+
+      Jerrod
+      Pollard
+
+      Timmy Bayer
+
+      Rey Shull
+
+      Lexie Ellis
+
+      Abel
+      Casper
+
+      Lawrence Petersen
+
+      Kobi Neal
+
+      Graciela Hanes
+
+      George
+      Ripley
+
+      Zechariah Fredrickson
+
+      Savanna Allred
+
+      Brock Ly
+
+      Malorie
+      Quinlan
+
+      Keisha Joy
+
+      Jensen Gorman
+
+      Lora Shepherd
+
+      Prince
+      Madrigal
+
+      Kara Merrill
+
+      Bridgette Zuniga
+
+      Malia Metcalf
+
+      Bill
+      McNair
+
+      Judith Pollack
+
+      Jessica Parkinson
+
+      Brandyn Tsai
+
+      Eugene
+      Sharpe
+
+      Melinda Elrod
+
+      Frederick Anderson
+
+      Salena March
+
+      Jaida
+      Florez
+
+      Jake Barnard
+
+      Kaila Sanborn
+
+      Kai Villalobos
+
+      Russell
+      Griffin
+
+      Armand Nadeau
+
+      Joe McLain
+
+      Kailyn Bustos
+
+      Jaret
+      Lehman
+
+      Mariano Fajardo
+
+      Odalys Fink
+
+      Josephine Ramsey
+
+      Colin
+      Applegate
+
+      Lily Arteaga
+
+      Walker Hershberger
+
+      Ty Robledo
+
+      Barry
+      Howe
+
+      Kassandra Littleton
+
+      Emmett Burdick
+
+      Kelly Leavitt
+
+      Brisa
+      Hills
+
+      Garret Waldron
+
+      Deana Cordell
+
+      Marcelo Swain
+
+      Griffin
+      Felder
+
+      Keyara Hanes
+
+      Macy Rahman
+
+      Reese Muhammad
+
+      Cullen
+      Parrish
+
+      Judith Deloach
+
+      Dejuan Woods
+
+      Jeniffer Selby
+
+'

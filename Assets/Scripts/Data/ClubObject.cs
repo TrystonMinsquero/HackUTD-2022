@@ -45,8 +45,8 @@ public class ClubObject : ScriptableObject
 	public Sprite icon;
 	public string president;
 	public Sprite presidentIcon;
-	public Color startColor;
-	public Color endColor;
+	public Color startColor = Color.white;
+	public Color endColor = Color.white;
 	
 	public string scene;
 	

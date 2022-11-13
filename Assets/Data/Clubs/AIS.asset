@@ -12,18 +12,515 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d499061baa2c4987b2b9f8dbb718d35, type: 3}
   m_Name: AIS
   m_EditorClassIdentifier: 
-  abbreviation: 
-  name: 
+  abbreviation: AIS
+  name: Artificial Intelligence Society
   shortKeyWords: 
-  description: 
-  categories: 
+  description: 'The Artificial Intelligence Society is one of the largest computer
+    science organizations at the University of Texas at Dallas. We are a team of
+    passionate individuals, devoted to bridging the gap between people''s awareness
+    and the world of AI. Our mission is to promote artificial intelligence education
+    at UT Dallas and in the surrounding communities.
+
+    
+
+    We have placed
+    educational outreach as one of our main priorities, to inspire others to learn
+    more about AI past the resources our organization provides. Regardless of age,
+    major, or experience, we believe that a simple appreciation of artificial intelligence
+    will become necessary as this technology advances. If you stick with us, we promise
+    to replace your fear with passion, and complexity with simplicity.'
+  categories: ECS
   memberCount: 0
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 50d573a27ea4dd04993e58092d450bdf, type: 3}
   president: 
   presidentIcon: {fileID: 0}
-  startColor: {r: 0, g: 0, b: 0, a: 0}
-  endColor: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 1, g: 1, b: 1, a: 0}
+  endColor: {r: 0.18039216, g: 0.41960788, b: 0.5647059, a: 1}
   scene: 
   events: []
   members:
-    namesText: 
+    namesText: 'Andrew Wallis
+
+      Odalys Fink
+
+      Kaila Sanborn
+
+      Josephine
+      Ramsey
+
+      Jerrod Pollard
+
+      Susana Esparza
+
+      Kailyn Bustos
+
+      Griffin
+      Felder
+
+      Jerrod Talbert
+
+      Makiya Hilton
+
+      Scarlett Calhoun
+
+      Ty
+      Robledo
+
+      Colin Applegate
+
+      Ally Gentry
+
+      Mitchel Canales
+
+      Jade
+      Braxton
+
+      Rey Shull
+
+      Jenny Kane
+
+      Salena Bowden
+
+      Sasha
+      Wynne
+
+      Tatiana Proffitt
+
+      Khadijah Burnette
+
+      Fabian Mendez
+
+      Bill
+      McNair
+
+      Kurt Way
+
+      Grace Connelly
+
+      Walker Hershberger
+
+      Kelly
+      Leavitt
+
+      Litzy Hannon
+
+      Eugene Sharpe
+
+      Judith Pollack
+
+      Marquez
+      Barton
+
+      Marisa Travis
+
+      Lucille Crain
+
+      Dustin Purdy
+
+      Mariano
+      Fajardo
+
+      Prince Madrigal
+
+      Kassandra Littleton
+
+      Kinsey
+      Navarro
+
+      Julianna Streeter
+
+      Pierce Gresham
+
+      Brennon Mcgrew
+
+      Cassie
+      Burgos
+
+      Jessica Parkinson
+
+      Garret Waldron
+
+      Kara Merrill
+
+      River
+      Cantu
+
+      Maxwell Wilkerson
+
+      Marcelo Swain
+
+      Milo Crawford
+
+      Kellie
+      Luong
+
+      Carla Houck
+
+      Dejuan Woods
+
+      Branson Taylor
+
+      Sommer
+      Creamer
+
+      Savanna Allred
+
+      Katerina Schott
+
+      Kobi Neal
+
+      Brayden
+      Laird
+
+      Eliezer Beck
+
+      Cloe Jolly
+
+      Deana Cordell
+
+      Janna
+      Fulmer
+
+      Micheal Amos
+
+      Dandre Harris
+
+      Kristin Santiago
+
+      Zechariah
+      Fredrickson
+
+      Kai Villalobos
+
+      Jeniffer Selby
+
+      Salvatore
+      Esquivel
+
+      Mina Baumann
+
+      Aditya Dallas
+
+      Brisa Hills
+
+      Jaida
+      Florez
+
+      Braden Ragan
+
+      Johnson Post
+
+      George Ripley
+
+      Samara
+      Solano
+
+      Malka Rand
+
+      Linus Fackler
+
+      Domenic Bronson
+
+      Barry
+      Howe
+
+      Dymond Chapman
+
+      Darrien Mattson
+
+      Jacqueline Buckner
+
+      Keyara
+      Hanes
+
+      Kerry Zimmerman
+
+      Ellie Amaro
+
+      Jake Barnard
+
+      Katya
+      Rains
+
+      Clark Singer
+
+      Lexie Ellis
+
+      Porter Isom
+
+      Sunny
+      Jasso
+
+      Tyasia Childers
+
+      Brock Ly
+
+      Keila Lindstrom
+
+      Julio
+      Lanham
+
+      Jimmie Harbin
+
+      Mickayla William
+
+      Kerry Saavedra
+
+      Angelica
+      Langley
+
+      Ximena Milligan
+
+      Melinda Elrod
+
+      Conor Hand
+
+      Destinie
+      Ma
+
+      Malia Metcalf
+
+      Timmy Bayer
+
+      Kimberly Ogle
+
+      Marcanthony
+      Demarco
+
+      Pedro Clouse
+
+      Ryann Reeves
+
+      Karlie Hoff
+
+      Mollie
+      Early
+
+      Liza Amaro
+
+      Shekinah Vogel
+
+      Blaze Devine
+
+      Aubrie
+      Archer
+
+      Claudia Yazzie
+
+      Imani Eads
+
+      Kaeli Matlock
+
+      Mckenzie
+      Bach
+
+      Abbie Troyer
+
+      Kimberly Cheng
+
+      Carol Coppola
+
+      Neo
+      Poore
+
+      Asher Grogan
+
+      Ellen Westfall
+
+      Bridgette Zuniga
+
+      Carlton
+      Dickson
+
+      Frederick Anderson
+
+      Graciela Hanes
+
+      Brandyn Tsai
+
+      Jadon
+      Bryan
+
+      Jaquez Merrell
+
+      Tryston Minsquero
+
+      Brian Hunt
+
+      Dominic
+      Miner
+
+      Bridgette Rosenthal
+
+      Kaeli Carlos
+
+      Francis Black
+
+      Macy
+      Rahman
+
+      Dameon Clawson
+
+      Ammon Woody
+
+      Jairo Zimmerman
+
+      Lisa
+      McKenna
+
+      Jaret Lehman
+
+      Teresa Wolf
+
+      Kaelyn Newsome
+
+      Claire
+      Gamez
+
+      Samantha Dix
+
+      Vaughn Sauer
+
+      Dajah Henriquez
+
+      Cullen
+      Parrish
+
+      Donte Ballard
+
+      Mattie Reedy
+
+      Carissa Prewitt
+
+      Aurora
+      Morales
+
+      America Martel
+
+      Rahul Goddard
+
+      Stephany Petersen
+
+      Irving
+      Farrar
+
+      Melvin Mansfield
+
+      Jamila Dubois
+
+      Judith Deloach
+
+      Devonte
+      Harley
+
+      Mason Gooch
+
+      Isabell Hackney
+
+      Susana Martell
+
+      Xzavier
+      Weathers
+
+      Brandon Coffey
+
+      Lily Arteaga
+
+      Glenn Carden
+
+      Tatum
+      Lake
+
+      Reese Hagan
+
+      Jena Weis
+
+      Keisha Joy
+
+      Joe McLain
+
+      Liam
+      Tharp
+
+      Angel McKnight
+
+      Tyron Seaton
+
+      George Hutson
+
+      Simon
+      Wirth
+
+      Ashleigh Abraham
+
+      Heidy Cerda
+
+      Charisma Negron
+
+      Russell
+      Griffin
+
+      Jensen Gorman
+
+      Lawrence Petersen
+
+      Ervin Bryant
+
+      Armand
+      Nadeau
+
+      Lucas Jaggernauth
+
+      Jadah Paz
+
+      Shayna Smart
+
+      Salena
+      March
+
+      Jami Cahill
+
+      Jackie Goff
+
+      Turner Hull
+
+      Abel
+      Casper
+
+      Seth Orellana
+
+      Santino Faulk
+
+      Reese Muhammad
+
+      Kerry
+      Quick
+
+      Xavier Staggs
+
+      Jonas Pagan
+
+      Lora Shepherd
+
+      Emmett
+      Burdick
+
+      Bradford Doucette
+
+      Keyara Crews
+
+      Aman Aguilar
+
+      Malorie
+      Quinlan
+
+      Annelise Berman
+
+      Miya Magana
+
+      Briley Lima
+
+      Regan
+      Dyer
+
+'

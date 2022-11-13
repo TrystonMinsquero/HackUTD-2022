@@ -12,18 +12,209 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d499061baa2c4987b2b9f8dbb718d35, type: 3}
   m_Name: UX Club
   m_EditorClassIdentifier: 
-  abbreviation: 
-  name: 
+  abbreviation: UX Club
+  name: User Experience (UX) Club
   shortKeyWords: 
-  description: 
-  categories: 
+  description: "User Experience (UX) is the design process of making products and
+    services that are easy to use and delightful to end-users. UX focuses on understanding
+    user goals, needs, and behaviors by using empathy and design thinking. As the
+    UX Club, we aim to learn UX theory and practice through lectures, workshops,
+    and conferences. We support each other as a community by encouraging sharing
+    and collaboration network, develop positive relationships with industry professionals
+    and alumni, and promote awareness and understanding of UX through mentoring and
+    volunteering.\r"
+  categories: ECS, ATEC
   memberCount: 0
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 41c5bfc3aa908dc46a18c92543eb5bb2, type: 3}
   president: 
   presidentIcon: {fileID: 0}
-  startColor: {r: 0, g: 0, b: 0, a: 0}
-  endColor: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0.121568635, g: 0.2392157, b: 0.49411768, a: 1}
+  endColor: {r: 0.38431376, g: 0.6901961, b: 0.8431373, a: 1}
   scene: 
   events: []
   members:
-    namesText: 
+    namesText: 'Jaida Florez
+
+      Marcelo Swain
+
+      Bridgette Rosenthal
+
+      Kassandra
+      Littleton
+
+      Kara Merrill
+
+      Abbie Troyer
+
+      Mickayla William
+
+      Teresa
+      Wolf
+
+      Garret Waldron
+
+      Cassie Burgos
+
+      Lawrence Petersen
+
+      Joe
+      McLain
+
+      Jeniffer Selby
+
+      Macy Rahman
+
+      Brian Hunt
+
+      Prince
+      Madrigal
+
+      Lily Arteaga
+
+      Carlton Dickson
+
+      Susana Esparza
+
+      Carol
+      Coppola
+
+      Eliezer Beck
+
+      Ellie Amaro
+
+      Dominic Miner
+
+      Linus
+      Fackler
+
+      Salena March
+
+      Brennon Mcgrew
+
+      Kelly Leavitt
+
+      Maxwell
+      Wilkerson
+
+      Rey Shull
+
+      Bridgette Zuniga
+
+      Marcanthony Demarco
+
+      Pierce
+      Gresham
+
+      Jackie Goff
+
+      Tyasia Childers
+
+      Mason Gooch
+
+      Deana
+      Cordell
+
+      Malia Metcalf
+
+      Aditya Dallas
+
+      Turner Hull
+
+      Judith
+      Deloach
+
+      Samara Solano
+
+      Lexie Ellis
+
+      Jade Braxton
+
+      Griffin
+      Felder
+
+      Abel Casper
+
+      Shekinah Vogel
+
+      Reese Hagan
+
+      Emmett
+      Burdick
+
+      Cullen Parrish
+
+      Karlie Hoff
+
+      Salvatore Esquivel
+
+      Colin
+      Applegate
+
+      America Martel
+
+      Tyron Seaton
+
+      Judith Pollack
+
+      Ty
+      Robledo
+
+      Tryston Minsquero
+
+      Lucas Jaggernauth
+
+      Timmy Bayer
+
+      Salena
+      Bowden
+
+      Asher Grogan
+
+      Lucille Crain
+
+      Kaeli Carlos
+
+      Brandon
+      Coffey
+
+      Kai Villalobos
+
+      Armand Nadeau
+
+      Zechariah Fredrickson
+
+      Keisha
+      Joy
+
+      Jaret Lehman
+
+      Ammon Woody
+
+      Graciela Hanes
+
+      Ervin
+      Bryant
+
+      Grace Connelly
+
+      Brisa Hills
+
+      Jadon Bryan
+
+      Mariano
+      Fajardo
+
+      Porter Isom
+
+      Scarlett Calhoun
+
+      Barry Howe
+
+      Reese
+      Muhammad
+
+      Khadijah Burnette
+
+      Bill McNair
+
+'

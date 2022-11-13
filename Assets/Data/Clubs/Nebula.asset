@@ -12,18 +12,217 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d499061baa2c4987b2b9f8dbb718d35, type: 3}
   m_Name: Nebula
   m_EditorClassIdentifier: 
-  abbreviation: 
-  name: 
+  abbreviation: Nebula
+  name: Nebula Labs
   shortKeyWords: 
-  description: 
-  categories: 
+  description: 'Nebula Labs is an interdisciplinary community consisting of developers
+    and designers that build tools for UT Dallas students like a degree planner and
+    a tool to visualize professor data.
+
+    
+
+    Our purpose is to:
+
+    * Create
+    and maintain an interdisciplinary community of learners
+
+    * Improve the lives
+    of others by providing a platform that allows students to build and maintain
+    tools for the community
+
+    * Provide students opportunities to serve the UT
+    Dallas community through experiential learning
+
+    * Host technical and design
+    workshops, teach-ins, and other events for UT Dallas students
+
+    
+
+    Our
+    current projects in development are:
+
+    * Planner - An interactive degree
+    planner
+
+    * Survival Guide - A wiki filled with information about life at
+    UT Dallas
+
+    * Trends - A website that displays course grades, evals, and
+    more
+
+    * Jupiter - A portal for everything related to student organizations
+
+    *
+    API/Platform - The backend that supports all of our projects
+
+    
+
+    If
+    building real, impactful projects for others appeals to you, please check out
+    our website (https://about.utdnebula.com/) and join our Discord (https://discord.gg/tcpcnfxmeQ)'
+  categories: ECS, ATEC
   memberCount: 0
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 2fcfc9302b80fcc4ea225da7202f620d, type: 3}
   president: 
   presidentIcon: {fileID: 0}
-  startColor: {r: 0, g: 0, b: 0, a: 0}
-  endColor: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0.9921569, g: 0.7372549, b: 0.4784314, a: 1}
+  endColor: {r: 0.43137258, g: 0.7843138, b: 0.7058824, a: 1}
   scene: 
   events: []
   members:
-    namesText: 
+    namesText: 'Dominic Miner
+
+      Timmy Bayer
+
+      Grace Connelly
+
+      Jeniffer
+      Selby
+
+      Griffin Felder
+
+      Lucas Jaggernauth
+
+      Carlton Dickson
+
+      Marcanthony
+      Demarco
+
+      Jadon Bryan
+
+      Asher Grogan
+
+      Lily Arteaga
+
+      Joe
+      McLain
+
+      Porter Isom
+
+      Tyasia Childers
+
+      Zechariah Fredrickson
+
+      Lexie
+      Ellis
+
+      Lucille Crain
+
+      Bridgette Zuniga
+
+      Pierce Gresham
+
+      Teresa
+      Wolf
+
+      Scarlett Calhoun
+
+      Maxwell Wilkerson
+
+      Jackie Goff
+
+      Bill
+      McNair
+
+      Khadijah Burnette
+
+      Kara Merrill
+
+      Eliezer Beck
+
+      Brisa
+      Hills
+
+      Tryston Minsquero
+
+      Karlie Hoff
+
+      Bridgette Rosenthal
+
+      Macy
+      Rahman
+
+      Susana Esparza
+
+      Salena Bowden
+
+      Salvatore Esquivel
+
+      Salena
+      March
+
+      Graciela Hanes
+
+      Mickayla William
+
+      Abel Casper
+
+      Cullen
+      Parrish
+
+      Brennon Mcgrew
+
+      Garret Waldron
+
+      Linus Fackler
+
+      Marcelo
+      Swain
+
+      Prince Madrigal
+
+      Brandon Coffey
+
+      Kai Villalobos
+
+      Colin
+      Applegate
+
+      Tyron Seaton
+
+      Aditya Dallas
+
+      Keisha Joy
+
+      Ellie
+      Amaro
+
+      Reese Hagan
+
+      Judith Deloach
+
+      Judith Pollack
+
+      Armand
+      Nadeau
+
+      Turner Hull
+
+      Malia Metcalf
+
+      Shekinah Vogel
+
+      Abbie
+      Troyer
+
+      Jaida Florez
+
+      Ammon Woody
+
+      Kassandra Littleton
+
+      Kaeli
+      Carlos
+
+      Rey Shull
+
+      Carol Coppola
+
+      Ervin Bryant
+
+      Mariano
+      Fajardo
+
+      Mason Gooch
+
+'
