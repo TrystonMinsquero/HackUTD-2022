@@ -7,5 +7,7 @@ namespace UI
     {
         [SerializeField] private TMP_Text clubAbbr;
         [SerializeField] private TMP_Text clubName;
+        
+        public void CreateEvent
     }
 }
