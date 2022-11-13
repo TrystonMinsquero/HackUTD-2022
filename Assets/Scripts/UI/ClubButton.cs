@@ -12,6 +12,7 @@ public class ClubButton : MonoBehaviour
 	public UIGradient gradient;
 	public TMP_Text abbrevText, nameText, taglineText, schoolText, memberText;
 	public Button button;
+	public Meter meter;
 	
 	public string searchableText = "";
 	

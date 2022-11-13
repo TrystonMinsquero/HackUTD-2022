@@ -695,6 +695,7 @@ MonoBehaviour:
   schoolText: {fileID: 4810665212436980904}
   memberText: {fileID: 0}
   button: {fileID: 8679243183418955245}
+  meter: {fileID: 1365255227623168382}
   searchableText: 
 --- !u!114 &5585998531435804786
 MonoBehaviour:
@@ -1291,7 +1292,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2177686594706766115
 RectTransform:
   m_ObjectHideFlags: 0
