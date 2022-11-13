@@ -7,7 +7,7 @@ public class ToborTank : Player
 	[SerializeField] private float _moveSpeed = 2;
 	[SerializeField] private float _turnSpeed = 2;
 	[SerializeField] private float _fireCooldown = 2;
-	[SerializeField] Projectile _projectilePool;
+	[SerializeField] Projectile _projectilePrefab;
 	[SerializeField] private Transform _firePos;
 	
 	private Rigidbody _rb;
@@ -27,7 +27,10 @@ public class ToborTank : Player
 		
 		if (InputControls.LeftAction)
 		{
-			Fire();
+			if(!IsServer)
+				FireServerRPC();
+			else
+				Fire();
 		}
 	}
 	
@@ -55,13 +58,25 @@ public class ToborTank : Player
 		Quaternion turnOffset = Quaternion.Euler(0, turnAmountThisFrame, 0);
 		_rb.MoveRotation(_rb.rotation * turnOffset);
 	}
-	
+
 	private void Fire()
 	{
 		if (Time.time - _fireTime < _fireCooldown) return;
 		_fireTime = Time.time;
-		var projectile = Instantiate(_projectilePool);
-		projectile.GetComponent<NetworkObject>().Spawn();
+		var projectile = Instantiate(_projectilePrefab).GetComponent<NetworkObject>();
+		projectile.Spawn();
+		var t = projectile.transform;
+		t.position = _firePos.position;
+		t.rotation = _firePos.rotation;
+	}
+
+	[ServerRpc]
+	private void FireServerRPC()
+	{
+		if (Time.time - _fireTime < _fireCooldown) return;
+		_fireTime = Time.time;
+		var projectile = Instantiate(_projectilePrefab).GetComponent<NetworkObject>();
+		projectile.Spawn();
 		var t = projectile.transform;
 		t.position = _firePos.position;
 		t.rotation = _firePos.rotation;
