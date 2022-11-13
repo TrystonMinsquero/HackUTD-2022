@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d499061baa2c4987b2b9f8dbb718d35, type: 3}
+  m_Name: Chess Club
+  m_EditorClassIdentifier: 
+  abbreviation: 
+  name: 
+  shortKeyWords: 
+  description: 
+  categories: 
+  memberCount: 0
+  icon: {fileID: 0}
+  president: 
+  presidentIcon: {fileID: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
+  scene: 
+  events: []
+  members:
+    namesText: 

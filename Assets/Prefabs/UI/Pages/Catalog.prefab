@@ -207,16 +207,17 @@ MonoBehaviour:
   uiClub: {fileID: 0}
   clubs:
   - {fileID: 11400000, guid: bde348d33883ca54388f4358d8f98b83, type: 2}
+  - {fileID: 11400000, guid: 13d1bcc8749deb8489cd74e17985de43, type: 2}
   - {fileID: 11400000, guid: 7ae713a41eb8b2a43929ff1cf8bac371, type: 2}
+  - {fileID: 11400000, guid: 19dbb87ba28829d40a53a5b136de7dc9, type: 2}
+  - {fileID: 11400000, guid: bba02f11f46525240b81f59a2c4a6d9d, type: 2}
+  - {fileID: 11400000, guid: 021bc6baa487e3f4a81771fa9669408b, type: 2}
+  - {fileID: 11400000, guid: a51e6114afaffb7468912f938abd0b66, type: 2}
+  - {fileID: 11400000, guid: 2e764f97b6859bb4899a0dba91bbbed8, type: 2}
   - {fileID: 11400000, guid: c5f3976c8d21e0e4b83aa1f2b4d32336, type: 2}
   - {fileID: 11400000, guid: f96915fd83a71b1499891ebb7ec5cfe9, type: 2}
-  - {fileID: 11400000, guid: 1101e39c826a9444cbdb7770ead951d8, type: 2}
-  - {fileID: 11400000, guid: 7319ad5c8604f415f9cd25b8d8f31d74, type: 2}
-  - {fileID: 11400000, guid: 5a17afefa5cd04410bbe80e929dbe4b3, type: 2}
-  - {fileID: 11400000, guid: e7ceb1cf2513d47b6b68950f6bb26b34, type: 2}
-  - {fileID: 11400000, guid: 75914d4116c66403daab36bd132252d6, type: 2}
-  - {fileID: 11400000, guid: 1be532295d5ef42649b8a0cf8bd62409, type: 2}
-  - {fileID: 11400000, guid: f1fcb45f13f0e45398247228c1771de9, type: 2}
+  - {fileID: 11400000, guid: 88b07e0c35552c74d8f145f118304325, type: 2}
+  - {fileID: 11400000, guid: b52346b2cc772e6429ac0ac1b565ad82, type: 2}
   sorting: 0
   field: {fileID: 6858538061905907790}
   clubPrefab: {fileID: 7650087131401697047, guid: 035b0a1cdf4b4462b88fffb5952570f8, type: 3}
@@ -283,7 +284,7 @@ MonoBehaviour:
   fitType: 2
   gridHeight: 0
   gridWidth: 2
-  cellSize: {x: 341.16406, y: 200}
+  cellSize: {x: 200.3371, y: 200}
   fitX: 1
   fitY: 0
   square: 0
@@ -1051,7 +1052,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 6858538060944462778}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.99998087
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1144,8 +1145,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00042159454}
-  m_SizeDelta: {x: -0, y: 653.2462}
+  m_AnchoredPosition: {x: 0, y: 0.00022584811}
+  m_SizeDelta: {x: -0, y: 520}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &6858538060807136551
 MonoBehaviour:
@@ -1169,7 +1170,7 @@ MonoBehaviour:
   fitType: 2
   gridHeight: 1
   gridWidth: 2
-  cellSize: {x: 533.2462, y: 400}
+  cellSize: {x: 392.41925, y: 400}
   fitX: 1
   fitY: 0
   square: 0
@@ -1917,7 +1918,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5373426430305240688, guid: 035b0a1cdf4b4462b88fffb5952570f8, type: 3}
       propertyPath: m_fontSize
-      value: 49.05
+      value: 33.1
       objectReference: {fileID: 0}
     - target: {fileID: 5585998531435804792, guid: 035b0a1cdf4b4462b88fffb5952570f8, type: 3}
       propertyPath: m_Pivot.x
@@ -2017,7 +2018,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6929771849305088848, guid: 035b0a1cdf4b4462b88fffb5952570f8, type: 3}
       propertyPath: m_fontSize
-      value: 29.75
+      value: 19.9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 035b0a1cdf4b4462b88fffb5952570f8, type: 3}
