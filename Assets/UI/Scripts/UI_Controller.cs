@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class UI_Controller : MonoBehaviour
 {
+	public string username;
 	public UI_Catalog catalog;
 	public UI_Club clubViewer;
 	public Events events;
 	public Home home;
+	public TMPro.TextMeshProUGUI usernameText;
 	
 	public GameObject[] screens;
 	
@@ -20,6 +22,7 @@ public class UI_Controller : MonoBehaviour
 	    events = GetComponent<Events>();
 	    
 	    ShowClubs();
+	    usernameText.text = $"Hello, <b>{username}";
     }
 
     // Update is called once per frame
