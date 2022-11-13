@@ -20,6 +20,7 @@ public class FlexibleGridLayout : LayoutGroup
 	public bool fitX;
 	public bool fitY;
 	public bool square;
+	public bool setHeight;
 
 	public override void CalculateLayoutInputHorizontal()
 	{
@@ -71,6 +72,12 @@ public class FlexibleGridLayout : LayoutGroup
 
 			SetChildAlongAxis(item, 0, cellSize.x * columnCount + spacing.x * columnCount + padding.left, cellSize.x);
 			SetChildAlongAxis(item, 1, cellSize.y * rowCount + spacing.y * rowCount + padding.top, cellSize.y);
+		}
+		
+		if (setHeight)
+		{
+			var h = (rectChildren.Count / gridWidth + 1) * (cellSize.y + spacing.y + padding.top + padding.bottom);
+			rectTransform.sizeDelta = new Vector2(rectTransform.rect.x, h);
 		}
 	}
 
