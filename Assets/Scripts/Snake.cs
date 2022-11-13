@@ -1,9 +1,11 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using Unity.Netcode;
 
-public class Snake : MonoBehaviour
+public class Snake : NetworkBehaviour
 {
     public Rigidbody2D rb;
     public float speed;
@@ -24,7 +26,12 @@ public class Snake : MonoBehaviour
     private void Start()
     {
         ResetState();
-        Time.fixedDeltaTime = 0.2f;
+        Time.fixedDeltaTime = 0.15f;
+    }
+
+    private void Update()
+    {
+        Move(InputControls.LeftAxisInput);
     }
 
     private void FixedUpdate()
@@ -41,12 +48,13 @@ public class Snake : MonoBehaviour
         );
     }
 
-    public void Move(InputAction.CallbackContext context)
+    public void Move(Vector2 input)
     {        
-        if (context.performed)
+        if (input.magnitude > 0)
         {
-            tempH = (int)context.ReadValue<Vector2>().x;        // input value x axis
-            tempV = (int)context.ReadValue<Vector2>().y;        // -       -   y axis
+            
+            tempH = (int)input.x;        // input value x axis
+            tempV = (int)input.y;        // -       -   y axis
             if (tempH == 1 && horizontal == -1 || tempV == 1 && vertical == -1 || tempH == -1 && horizontal == 1 || tempV == -1 && vertical == 1 || tempV == 0 && tempH == 0)
                 return;
             
@@ -78,14 +86,27 @@ public class Snake : MonoBehaviour
         
     }
 
-    private void Grow()
+    [ServerRpc]
+    private void GrowServerRpc()
+    {
+        
+    }
+
+    [ClientRpc]
+    private void GrowClientRpc()
     {
         Transform segment = Instantiate(this.segmentPrefab);
         segment.position = _segments[_segments.Count - 1].position;
 
         _segments.Add(segment);
         score += 10;
-        scoreText.GetComponent<TMP_Text>().text = score.ToString("0000000"); // adds 0s to front of string
+        scoreText.GetComponent<TMP_Text>().text = score.ToString("0000000"); //
+    }
+    
+    private void Grow()
+    {
+       if(IsHost) GrowClientRpc();
+       else GrowServerRpc();
     }
 
     private void ResetState()
@@ -123,5 +144,10 @@ public class Snake : MonoBehaviour
         {
             ResetState();
         }
+    }
+
+    private void OnDestroy()
+    {
+        Time.fixedDeltaTime = 0.016f;
     }
 }

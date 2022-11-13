@@ -43,7 +43,7 @@ public class UI_Home : MonoBehaviour
 	{
 		foreach (ClubObject e in _controller.user.userClubs) {
 			HomeClub ev = Instantiate(_clubPrefab, _clubContent);
-			ev.Set(e.name, e.icon);
+			ev.Set(e.name, e.icon, e);
 			clubs.Add(ev);
 		}
 	}

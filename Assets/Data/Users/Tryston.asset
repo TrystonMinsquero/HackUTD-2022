@@ -21,3 +21,4 @@ MonoBehaviour:
   - Linus Facler
   userClubs:
   - {fileID: 11400000, guid: f96915fd83a71b1499891ebb7ec5cfe9, type: 2}
+  ownClub: {fileID: 11400000, guid: f96915fd83a71b1499891ebb7ec5cfe9, type: 2}
