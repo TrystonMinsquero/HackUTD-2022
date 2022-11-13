@@ -17,4 +17,6 @@ public class Event : MonoBehaviour
 		locationText.text = location;
 		this.promoted.SetActive(promoted);
 	}
+	
+	
 }

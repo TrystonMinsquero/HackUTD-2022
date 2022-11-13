@@ -11,4 +11,6 @@ public class User : ScriptableObject
 	public List<string> friends;
 	public List<ClubObject> userClubs;
 	public ClubObject ownClub;
+
+	public List<EventObject> eventsGoing;
 }
