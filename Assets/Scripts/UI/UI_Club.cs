@@ -9,7 +9,7 @@ public class UI_Club : MonoBehaviour
 {
 	[SerializeField] private UI_Controller _controller;
 	public RectTransform clubTransform;
-	public TextMeshProUGUI nameText, presidentText, description;
+	public TMP_Text abbrevText, nameText, presidentText, tagline, description, memberCount;
 	public Image presidentImage;
 	
 	public int startPosition, endPosition;
@@ -36,13 +36,18 @@ public class UI_Club : MonoBehaviour
 	
 	public void open(ClubObject club) {
 		attachedClub = club;
-		StartCoroutine(lerp(startPosition, endPosition));
 	    
-		nameText.text = attachedClub.name;
-		presidentText.text = $"President\n<b>{attachedClub.president}";
-		description.text = attachedClub.description;
-		presidentImage.sprite = attachedClub.presidentIcon;
+		if (abbrevText) abbrevText.text = attachedClub.abbreviation;
+		if (nameText) nameText.text = attachedClub.name;
+		if (presidentText) presidentText.text = $"President\n<b>{attachedClub.president}";
+		if (tagline) tagline.text = attachedClub.shortKeyWords;
+		if (description) description.text = attachedClub.description;
+		if (description) description.text = attachedClub.description;
+		if (presidentImage) presidentImage.sprite = attachedClub.presidentIcon;
+		if (memberCount) memberCount.text = $"Members: {attachedClub.memberCount}";
+		
 		CheckJoined();
+		StartCoroutine(lerp(startPosition, endPosition));
 	}
 	
 	public void close() {
