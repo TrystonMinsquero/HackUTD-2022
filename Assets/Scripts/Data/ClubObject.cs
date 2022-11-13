@@ -23,4 +23,13 @@ public class ClubObject : ScriptableObject
 	{
 		return members.GetNames();
 	}
+#if UNITY_EDITOR
+	// [SerializeField] private int numberOfNames
+	[Button]
+	private void GenerateRandomNames(int num)
+	{
+		members.namesText = RandomNames.GenerateRandomNamesString(num);
+	}
+#endif 
+
 }
