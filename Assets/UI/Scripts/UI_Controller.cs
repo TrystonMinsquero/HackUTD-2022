@@ -7,6 +7,8 @@ public class UI_Controller : MonoBehaviour
 	public UI_Catalog catalog;
 	public UI_Club clubViewer;
 	
+	public GameObject[] screens;
+	
     // Start is called before the first frame update
     void Start()
     {
@@ -26,5 +28,11 @@ public class UI_Controller : MonoBehaviour
 	
 	public void Close() {
 		clubViewer.close();
+	}
+	
+	public void ChangeTab(int index) {
+		for (int i = 0; i < screens.Length; i++) {
+			screens[i].SetActive(i == index);
+		}
 	}
 }
