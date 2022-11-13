@@ -4,7 +4,7 @@ using UnityEngine;
 using Unity.Netcode;
 using Unity.Netcode.Components;
 
-[RequireComponent(typeof(NetworkObject), typeof(NetworkTransform))]
+[RequireComponent(typeof(NetworkObject))]
 public class Player : NetworkBehaviour
 {
 	public override void OnNetworkSpawn()
@@ -12,8 +12,14 @@ public class Player : NetworkBehaviour
 		if (!IsOwner)
 		{
 			Destroy(this);
+			OnNotOwner();
 			return;
 		}
-		GetComponent<NetworkTransform>().InLocalSpace = true;
+		var t = GetComponent<NetworkTransform>();
+		if (t) t.InLocalSpace = true;
+		var r = GetComponent<NetworkRigidbody>();
+		if (r) t.InLocalSpace = true;
 	}
+	
+	protected virtual void OnNotOwner() {}
 }
