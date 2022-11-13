@@ -210,7 +210,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 13d1bcc8749deb8489cd74e17985de43, type: 2}
   - {fileID: 11400000, guid: 7ae713a41eb8b2a43929ff1cf8bac371, type: 2}
   - {fileID: 11400000, guid: 19dbb87ba28829d40a53a5b136de7dc9, type: 2}
-  - {fileID: 11400000, guid: bba02f11f46525240b81f59a2c4a6d9d, type: 2}
   - {fileID: 11400000, guid: 021bc6baa487e3f4a81771fa9669408b, type: 2}
   - {fileID: 11400000, guid: a51e6114afaffb7468912f938abd0b66, type: 2}
   - {fileID: 11400000, guid: 2e764f97b6859bb4899a0dba91bbbed8, type: 2}
@@ -284,7 +283,7 @@ MonoBehaviour:
   fitType: 2
   gridHeight: 0
   gridWidth: 2
-  cellSize: {x: 200.3371, y: 200}
+  cellSize: {x: 293.37384, y: 200}
   fitX: 1
   fitY: 0
   square: 0
@@ -1052,7 +1051,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 6858538060944462778}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9999493
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1145,7 +1144,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00022584811}
+  m_AnchoredPosition: {x: 0, y: -0.000057849607}
   m_SizeDelta: {x: -0, y: 520}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &6858538060807136551
@@ -1170,7 +1169,7 @@ MonoBehaviour:
   fitType: 2
   gridHeight: 1
   gridWidth: 2
-  cellSize: {x: 392.41925, y: 400}
+  cellSize: {x: 485.456, y: 400}
   fitX: 1
   fitY: 0
   square: 0
@@ -1918,7 +1917,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5373426430305240688, guid: 035b0a1cdf4b4462b88fffb5952570f8, type: 3}
       propertyPath: m_fontSize
-      value: 33.1
+      value: 43.6
       objectReference: {fileID: 0}
     - target: {fileID: 5585998531435804792, guid: 035b0a1cdf4b4462b88fffb5952570f8, type: 3}
       propertyPath: m_Pivot.x
@@ -2018,7 +2017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6929771849305088848, guid: 035b0a1cdf4b4462b88fffb5952570f8, type: 3}
       propertyPath: m_fontSize
-      value: 19.9
+      value: 24.75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 035b0a1cdf4b4462b88fffb5952570f8, type: 3}
