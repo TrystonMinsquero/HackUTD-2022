@@ -12,7 +12,11 @@ public class UI_Controller : MonoBehaviour
 	public GameObject[] screens;
 	
     void Start()
-    {
+	{
+		#if UNITY_EDITOR
+		AI.Start();
+		#endif
+		
 	    Application.targetFrameRate = 60;
 	    
 	    if (_requireLogin) ChangeTab(0);
