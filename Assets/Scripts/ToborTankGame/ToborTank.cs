@@ -27,10 +27,9 @@ public class ToborTank : Player
 		
 		if (InputControls.LeftAction)
 		{
-			if(!IsServer)
-				FireServerRPC();
-			else
-				Fire();
+			if (Time.time - _fireTime < _fireCooldown) return;
+			_fireTime = Time.time;
+			FireServerRPC();
 		}
 	}
 	
@@ -61,22 +60,30 @@ public class ToborTank : Player
 
 	private void Fire()
 	{
-		if (Time.time - _fireTime < _fireCooldown) return;
-		_fireTime = Time.time;
-		var projectile = Instantiate(_projectilePrefab).GetComponent<NetworkObject>();
-		projectile.Spawn();
-		var t = projectile.transform;
-		t.position = _firePos.position;
-		t.rotation = _firePos.rotation;
+		// if (Time.time - _fireTime < _fireCooldown) return;
+		// _fireTime = Time.time;
+		// var t = projectile.transform;
+		// t.position = _firePos.position;
+		// t.rotation = _firePos.rotation;
+		// FireServerRPC();
 	}
 
-	[ServerRpc]
-	private void FireServerRPC()
+	[ServerRpc(RequireOwnership = false)]
+	private void FireServerRPC(ServerRpcParams serverRpcParams = default)
 	{
-		if (Time.time - _fireTime < _fireCooldown) return;
-		_fireTime = Time.time;
-		var projectile = Instantiate(_projectilePrefab).GetComponent<NetworkObject>();
-		projectile.Spawn();
+		var clientId = serverRpcParams.Receive.SenderClientId;
+		if (NetworkManager.ConnectedClients.ContainsKey(clientId))
+		{
+			var client = NetworkManager.ConnectedClients[clientId];
+			var projectile = Instantiate(_projectilePrefab);
+			projectile.GetComponent<NetworkObject>().SpawnWithOwnership(clientId);
+			client.PlayerObject.GetComponent<ToborTank>().FireProjectile(projectile.GetComponent<Projectile>());
+		}
+	}
+
+	private void FireProjectile(Projectile projectile)
+	{
+		
 		var t = projectile.transform;
 		t.position = _firePos.position;
 		t.rotation = _firePos.rotation;
