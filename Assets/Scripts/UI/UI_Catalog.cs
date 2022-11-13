@@ -8,6 +8,7 @@ public enum Sorting {
 	Name,
 	MemberCount,
 	Tag,
+	Meter,
 }
 
 public class UI_Catalog : MonoBehaviour
@@ -61,6 +62,7 @@ public class UI_Catalog : MonoBehaviour
 	}
     
 	public void Type() {
+		sorting = Sorting.Name;
 		searchText = field.text.ToLower();
 		
 		foreach (ClubButton button in clubButtons) {
@@ -85,6 +87,9 @@ public class UI_Catalog : MonoBehaviour
 		case Sorting.MemberCount:
 			clubButtons.Sort(CompareMemberCount);
 			break;
+		case Sorting.Meter:
+			clubButtons.Sort(CompareMeter);
+			break;
 		}
 		
 		int i = 0;
@@ -103,5 +108,26 @@ public class UI_Catalog : MonoBehaviour
 	
 	public int CompareTag(ClubButton a, ClubButton b) {
 		return a.club.categories[0].CompareTo(b.club.categories[0]);
+	}
+	
+	public int CompareMeter(ClubButton a, ClubButton b) {
+		return a.meter.Value.CompareTo(b.meter.Value);
+	}
+	
+	public void SearchAI() {
+		var descs = new List<string>();
+		
+		foreach (ClubButton btn in clubButtons) {
+			descs.Add(btn.searchableText);
+		}
+		
+		var results = AI.Run(searchText, descs);
+		for (int i = 0; i < results.Length; i++) {
+			clubButtons[i].meter.SetValue(results[i]);
+			clubButtons[i].gameObject.SetActive(true);
+		}
+		
+		sorting = Sorting.Meter;
+		Sort();
 	}
 }

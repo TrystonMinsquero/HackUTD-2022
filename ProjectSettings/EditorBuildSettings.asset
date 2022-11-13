@@ -14,9 +14,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TankGame.unity
     guid: d0cb603c6ea1d5d45bf355c7804b8295
-  - enabled: 0
-    path: Assets/QR/Scenes/ReadQRCode.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/QR/Scenes/SampleScene.unity
+    guid: 0a6686806db0ae1468babf2ce64b6b30
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 5e4777f64f6294c888e2d8630ae3a34e, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: c061cee8013354328b681065bdce2d24, type: 2}
