@@ -12,17 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d499061baa2c4987b2b9f8dbb718d35, type: 3}
   m_Name: SGDA
   m_EditorClassIdentifier: 
-  name: SGDA
-  president: Tryston Minsquero
+  abbreviation: SGDA
+  name: Student Game Developer Assocation
+  shortKeyWords: Game Development
   description: 'The Student Game Developer Association is a club focused on game
     development. We serve to create a growing community of students and industry
     professionals to promote game development. We foster this community by hosting
     various events to help our members learn technical and professional skills associated
     with the games industry. '
-  categories: 0000000002000000
-  icon: {fileID: 21300000, guid: ac578087b22002e4cb7975dc54f03aeb, type: 3}
-  presidentIcon: {fileID: 21300000, guid: 82c278466f03343a288a6293f70e8420, type: 3}
+  categories: ATEC, ECS
   memberCount: 331
+  icon: {fileID: 21300000, guid: ac578087b22002e4cb7975dc54f03aeb, type: 3}
+  president: Tryston Minsquero
+  presidentIcon: {fileID: 21300000, guid: 82c278466f03343a288a6293f70e8420, type: 3}
   startColor: {r: 0.94509804, g: 0.94509804, b: 0.94509804, a: 1}
   endColor: {r: 0.33333334, g: 0.33333334, b: 0.33333334, a: 1}
   scene: Game
@@ -48,736 +50,735 @@ MonoBehaviour:
 
       Kassandra Littleton
 
-      Graciela
-      Hanes
+      Graciela Hanes
 
-      Lucille Crain
+      Lucille
+      Crain
 
       Tyron Seaton
 
       Eliezer Beck
 
-      Asher
-      Grogan
+      Asher Grogan
 
-      Tyasia Childers
+      Tyasia
+      Childers
 
       Ervin Bryant
 
       Carlton Dickson
 
-      Aditya
-      Dallas
+      Aditya Dallas
 
-      Griffin Felder
+      Griffin
+      Felder
 
       Bill McNair
 
       Jeniffer Selby
 
-      Judith
-      Deloach
+      Judith Deloach
 
-      Colin Applegate
+      Colin
+      Applegate
 
       Jackie Goff
 
       Bridgette Rosenthal
 
-      Grace
-      Connelly
+      Grace Connelly
 
-      Keisha Joy
+      Keisha
+      Joy
 
       Garret Waldron
 
       Marcanthony Demarco
 
-      Salvatore
-      Esquivel
+      Salvatore Esquivel
 
-      Timmy Bayer
+      Timmy
+      Bayer
 
       Ammon Woody
 
       Jaida Florez
 
-      Jadon
-      Bryan
+      Jadon Bryan
 
-      Kai Villalobos
+      Kai
+      Villalobos
 
       Salena Bowden
 
       Malia Metcalf
 
-      Zechariah
-      Fredrickson
+      Zechariah Fredrickson
 
-      Kara Merrill
+      Kara
+      Merrill
 
       Bridgette Zuniga
 
       Karlie Hoff
 
-      Mickayla
-      William
+      Mickayla William
 
-      Prince Madrigal
+      Prince
+      Madrigal
 
       Teresa Wolf
 
       Brisa Hills
 
-      Carol
-      Coppola
+      Carol Coppola
 
-      Mariano Fajardo
+      Mariano
+      Fajardo
 
       Judith Pollack
 
       Turner Hull
 
-      Scarlett
-      Calhoun
+      Scarlett Calhoun
 
-      Salena March
+      Salena
+      March
 
       Khadijah Burnette
 
       Reese Hagan
 
-      Shekinah
-      Vogel
+      Shekinah Vogel
 
-      Pierce Gresham
+      Pierce
+      Gresham
 
       Dominic Miner
 
       Porter Isom
 
-      Lily
-      Arteaga
+      Lily Arteaga
 
-      Armand Nadeau
+      Armand
+      Nadeau
 
       Macy Rahman
 
       Rey Shull
 
-      Cullen
-      Parrish
+      Cullen Parrish
 
-      Ellie Amaro
+      Ellie
+      Amaro
 
       Joe McLain
 
       Mason Gooch
 
-      Lexie
-      Ellis
+      Lexie Ellis
 
-      Marcelo Swain
+      Marcelo
+      Swain
 
       Kaeli Carlos
 
       Brennon Mcgrew
 
-      Maxwell
-      Wilkerson
+      Maxwell Wilkerson
 
-      Abbie Troyer
+      Abbie
+      Troyer
 
       Abel Casper
 
       Emmett Burdick
 
-      Lawrence
-      Petersen
+      Lawrence Petersen
 
-      America Martel
+      America
+      Martel
 
       Barry Howe
 
       Deana Cordell
 
-      Ty
-      Robledo
+      Ty Robledo
 
-      Samara Solano
+      Samara
+      Solano
 
       Reese Muhammad
 
       Jade Braxton
 
-      Jaret
-      Lehman
+      Jaret Lehman
 
-      Brian Hunt
+      Brian
+      Hunt
 
       Cassie Burgos
 
       Kelly Leavitt
 
-      Russell
-      Griffin
+      Russell Griffin
 
-      Brock Ly
+      Brock
+      Ly
 
       Mckenzie Bach
 
       Kerry Saavedra
 
-      Melinda
-      Elrod
+      Melinda Elrod
 
-      Brandyn Tsai
+      Brandyn
+      Tsai
 
       Marisa Travis
 
       Jake Barnard
 
-      Kristin
-      Santiago
+      Kristin Santiago
 
-      Pedro Clouse
+      Pedro
+      Clouse
 
       George Ripley
 
       Odalys Fink
 
-      Destinie
-      Ma
+      Destinie Ma
 
-      Branson Taylor
+      Branson
+      Taylor
 
       Jadah Paz
 
       Walker Hershberger
 
-      Tatiana
-      Proffitt
+      Tatiana Proffitt
 
-      Josephine Ramsey
+      Josephine
+      Ramsey
 
       Janna Fulmer
 
       Charisma Negron
 
-      Eugene
-      Sharpe
+      Eugene Sharpe
 
-      Jessica Parkinson
+      Jessica
+      Parkinson
 
       Kaila Sanborn
 
       Keyara Hanes
 
-      Kobi
-      Neal
+      Kobi Neal
 
-      Lora Shepherd
+      Lora
+      Shepherd
 
       Savanna Allred
 
       Malorie Quinlan
 
-      Tatum
-      Lake
+      Tatum Lake
 
-      Ryann Reeves
+      Ryann
+      Reeves
 
       Dejuan Woods
 
       Imani Eads
 
-      Frederick
-      Anderson
+      Frederick Anderson
 
-      Jensen Gorman
+      Jensen
+      Gorman
 
       Jerrod Pollard
 
       Xzavier Weathers
 
-      Kailyn
-      Bustos
+      Kailyn Bustos
 
-      Kerry Zimmerman
+      Kerry
+      Zimmerman
 
       Angel McKnight
 
       Jacqueline Buckner
 
-      Neo
-      Poore
+      Neo Poore
 
-      Jairo Zimmerman
+      Jairo
+      Zimmerman
 
       Glenn Carden
 
       Briley Lima
 
-      Bradford
-      Doucette
+      Bradford Doucette
 
-      Julianna Streeter
+      Julianna
+      Streeter
 
       Dandre Harris
 
       Susana Martell
 
-      Liza
-      Amaro
+      Liza Amaro
 
-      Kimberly Ogle
+      Kimberly
+      Ogle
 
       Claire Gamez
 
       Carla Houck
 
-      Makiya
-      Hilton
+      Makiya Hilton
 
-      Xavier Staggs
+      Xavier
+      Staggs
 
       Irving Farrar
 
       Heidy Cerda
 
-      Kaeli
-      Matlock
+      Kaeli Matlock
 
-      Jonas Pagan
+      Jonas
+      Pagan
 
       Vaughn Sauer
 
       Micheal Amos
 
-      Liam
-      Tharp
+      Liam Tharp
 
-      Carissa Prewitt
+      Carissa
+      Prewitt
 
       Kimberly Cheng
 
       Devonte Harley
 
-      Dymond
-      Chapman
+      Dymond Chapman
 
-      Jamila Dubois
+      Jamila
+      Dubois
 
       Santino Faulk
 
       Melvin Mansfield
 
-      Dustin
-      Purdy
+      Dustin Purdy
 
-      Conor Hand
+      Conor
+      Hand
 
       Clark Singer
 
       Kellie Luong
 
-      Shayna
-      Smart
+      Shayna Smart
 
-      Andrew Wallis
+      Andrew
+      Wallis
 
       Jerrod Talbert
 
       Seth Orellana
 
-      Ally
-      Gentry
+      Ally Gentry
 
-      Aman Aguilar
+      Aman
+      Aguilar
 
       Sasha Wynne
 
       Lisa McKenna
 
-      Stephany
-      Petersen
+      Stephany Petersen
 
-      Darrien Mattson
+      Darrien
+      Mattson
 
       Annelise Berman
 
       Jena Weis
 
-      Keyara
-      Crews
+      Keyara Crews
 
-      Brayden Laird
+      Brayden
+      Laird
 
       Regan Dyer
 
       Dameon Clawson
 
-      Kurt
-      Way
+      Kurt Way
 
-      Sommer Creamer
+      Sommer
+      Creamer
 
       Fabian Mendez
 
       Mollie Early
 
-      Dajah
-      Henriquez
+      Dajah Henriquez
 
-      Braden Ragan
+      Braden
+      Ragan
 
       Ashleigh Abraham
 
       Litzy Hannon
 
-      Mattie
-      Reedy
+      Mattie Reedy
 
-      Jaquez Merrell
+      Jaquez
+      Merrell
 
       Claudia Yazzie
 
       Rahul Goddard
 
-      Ellen
-      Westfall
+      Ellen Westfall
 
-      Mina Baumann
+      Mina
+      Baumann
 
       Milo Crawford
 
       Aubrie Archer
 
-      Kaelyn
-      Newsome
+      Kaelyn Newsome
 
-      Katya Rains
+      Katya
+      Rains
 
       Mitchel Canales
 
       George Hutson
 
-      Cloe
-      Jolly
+      Cloe Jolly
 
-      Francis Black
+      Francis
+      Black
 
       Ximena Milligan
 
       Sunny Jasso
 
-      Angelica
-      Langley
+      Angelica Langley
 
-      Jimmie Harbin
+      Jimmie
+      Harbin
 
       Blaze Devine
 
       Aurora Morales
 
-      Johnson
-      Post
+      Johnson Post
 
-      Domenic Bronson
+      Domenic
+      Bronson
 
       Marquez Barton
 
       Simon Wirth
 
-      Malka
-      Rand
+      Malka Rand
 
-      River Cantu
+      River
+      Cantu
 
       Jenny Kane
 
       Kinsey Navarro
 
-      Kerry
-      Quick
+      Kerry Quick
 
-      Donte Ballard
+      Donte
+      Ballard
 
       Julio Lanham
 
       Miya Magana
 
-      Jami
-      Cahill
+      Jami Cahill
 
-      Isabell Hackney
+      Isabell
+      Hackney
 
       Katerina Schott
 
       Samantha Dix
 
-      Keila
-      Lindstrom
+      Keila Lindstrom
 
-      Ezekiel Corey
+      Ezekiel
+      Corey
 
       Caitlynn Hopkins
 
       Toby Clancy
 
-      Bayley
-      Matheny
+      Bayley Matheny
 
-      Kori Galvez
+      Kori
+      Galvez
 
       Davon Ryan
 
       Maya Huddleston
 
-      Maranda
-      Gordon
+      Maranda Gordon
 
-      Gavin Carmichael
+      Gavin
+      Carmichael
 
       Amy Beckham
 
       Myles Travis
 
-      Margaret
-      Peterson
+      Margaret Peterson
 
-      Chad Freed
+      Chad
+      Freed
 
       Dandre Olivo
 
       Regina Whitehead
 
-      Ashlyn
-      Espinosa
+      Ashlyn Espinosa
 
-      Devyn Arevalo
+      Devyn
+      Arevalo
 
       Dorien Babb
 
       Kirk Reiter
 
-      Alyson
-      Cornell
+      Alyson Cornell
 
-      Adrianne Somers
+      Adrianne
+      Somers
 
       Franco Hite
 
       Jayce Ralston
 
-      Trent
-      Boyd
+      Trent Boyd
 
-      Edna Robles
+      Edna
+      Robles
 
       Kayli Way
 
       Bailey Pierce
 
-      Eden
-      Stringer
+      Eden Stringer
 
-      Kaylynn Hennessy
+      Kaylynn
+      Hennessy
 
       Baby Boland
 
       Ashlin Brunner
 
-      Jada
-      Buck
+      Jada Buck
 
-      Taylar Zamora
+      Taylar
+      Zamora
 
       Mathew Churchill
 
       Abril Byrd
 
-      Karley
-      Cassidy
+      Karley Cassidy
 
-      Roderick Mcgrew
+      Roderick
+      Mcgrew
 
       Miguel Graber
 
       Kaleigh Egan
 
-      Hadley
-      Timmons
+      Hadley Timmons
 
-      Trinity Hatch
+      Trinity
+      Hatch
 
       Maryjane Graff
 
       Tianna Oakley
 
-      Sergio
-      Reese
+      Sergio Reese
 
-      Tyreek Moulton
+      Tyreek
+      Moulton
 
       Stefani Paredes
 
       Sarai Berry
 
-      Eleazar
-      Urbina
+      Eleazar Urbina
 
-      Ladarius Barth
+      Ladarius
+      Barth
 
       Keyara Carvalho
 
       Octavio Rayburn
 
-      Yasmin
-      Mueller
+      Yasmin Mueller
 
-      Lea Kauffman
+      Lea
+      Kauffman
 
       Citlalli Cherry
 
       Hassan Kern
 
-      Keelan
-      Wofford
+      Keelan Wofford
 
-      Kyndal Stiles
+      Kyndal
+      Stiles
 
       Kaiden McLaughlin
 
       Gerald Schaffer
 
-      Brynne
-      Brower
+      Brynne Brower
 
-      Ximena Schweitzer
+      Ximena
+      Schweitzer
 
       Layla Paris
 
       Clay Vogt
 
-      Lesli
-      Clapp
+      Lesli Clapp
 
-      Demetrius Callahan
+      Demetrius
+      Callahan
 
       Ernesto Powell
 
       Gracelyn Isaacs
 
-      Iman
-      Haywood
+      Iman Haywood
 
-      Diego Slack
+      Diego
+      Slack
 
       Kya Maier
 
       Luther Terry
 
-      Roxanna
-      Clarke
+      Roxanna Clarke
 
-      Jade Durant
+      Jade
+      Durant
 
       Tomas Mixon
 
       Angelique Harder
 
-      Yamile
-      Whitten
+      Yamile Whitten
 
-      Julissa Palumbo
+      Julissa
+      Palumbo
 
       Kalen Powell
 
       Callie Wetzel
 
-      Tony
-      Boyce
+      Tony Boyce
 
-      Nyla Ly
+      Nyla
+      Ly
 
       Leah Compton
 
       Dorien Sandlin
 
-      Kalob
-      Thacker
+      Kalob Thacker
 
-      Sidney Tripp
+      Sidney
+      Tripp
 
       Brandon Stacey
 
       Paloma Byrd
 
-      Trever
-      Garber
+      Trever Garber
 
-      Jesse Page
+      Jesse
+      Page
 
       Kai Mueller
 
       Branson Ivy
 
-      Maritza
-      Moriarty
+      Maritza Moriarty
 
-      Marion Stpierre
+      Marion
+      Stpierre
 
       Craig Heckman
 
       Bridger Bateman
 
-      Jovanny
-      Madsen
+      Jovanny Madsen
 
-      Alexandro Ellis
+      Alexandro
+      Ellis
 
       Caylin Register
 
       Monika Almeida
 
-      Karah
-      Gagne
+      Karah Gagne
 
-      Cydney Black
+      Cydney
+      Black
 
       Kentrell Smallwood
 
       Tyrek Molnar
 
-      Alanna
-      Lackey
+      Alanna Lackey
 
-      Lizbeth Lea
+      Lizbeth
+      Lea
 
       Jacques Russell
 
       Jayla Bratcher
 
-      Brynne
-      Baumgartner
+      Brynne Baumgartner
 
-      Heriberto Olivares
+      Heriberto
+      Olivares
 
       Lloyd Neil
 
       Shemar Shaw
 
-      Alize
-      Perkins
+      Alize Perkins
 
-      Alicia Earley
+      Alicia
+      Earley
 
       Gabrielle Travis
 
       Dakota Vasquez
 
-      Kiley
-      Card
+      Kiley Card
 
 '
