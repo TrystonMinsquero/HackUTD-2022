@@ -12,18 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d499061baa2c4987b2b9f8dbb718d35, type: 3}
   m_Name: SA
   m_EditorClassIdentifier: 
+  abbreviation: SA
   name: Strings Attached
-  president: Cy Feagin
+  shortKeyWords: 
   description: The purpose of Strings Attached is to encourage students of all experience
     levels to come together and play string instruments. We aim to establish a creative
     and constructive environment for those who wish to expand their knowledge of
     string instruments and music theory. Our group will always accept people who
     enjoy playing their instruments, listening to music together, improving their
     skills, and playing actively with other members.
-  categories: 03000000
-  icon: {fileID: 21300000, guid: c3e1061bb09dd7d40b357b57783b3209, type: 3}
-  presidentIcon: {fileID: 0}
+  categories: Music
   memberCount: 26
+  icon: {fileID: 21300000, guid: c3e1061bb09dd7d40b357b57783b3209, type: 3}
+  president: Cy Feagin
+  presidentIcon: {fileID: 0}
   startColor: {r: 1, g: 0.7647059, b: 0.015686275, a: 1}
   endColor: {r: 1, g: 0.27058825, b: 0.43529412, a: 1}
   scene: TankGame
@@ -42,46 +44,46 @@ MonoBehaviour:
 
       Kassandra Littleton
 
-      Graciela
-      Hanes
+      Graciela Hanes
 
-      Lucille Crain
+      Lucille
+      Crain
 
       Tyron Seaton
 
       Eliezer Beck
 
-      Asher
-      Grogan
+      Asher Grogan
 
-      Tyasia Childers
+      Tyasia
+      Childers
 
       Ervin Bryant
 
       Carlton Dickson
 
-      Aditya
-      Dallas
+      Aditya Dallas
 
-      Griffin Felder
+      Griffin
+      Felder
 
       Bill McNair
 
       Jeniffer Selby
 
-      Judith
-      Deloach
+      Judith Deloach
 
-      Colin Applegate
+      Colin
+      Applegate
 
       Jackie Goff
 
       Bridgette Rosenthal
 
-      Grace
-      Connelly
+      Grace Connelly
 
-      Keisha Joy
+      Keisha
+      Joy
 
       Garret Waldron
 

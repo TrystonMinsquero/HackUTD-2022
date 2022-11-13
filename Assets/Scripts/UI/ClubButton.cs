@@ -10,7 +10,7 @@ public class ClubButton : MonoBehaviour
 	public ClubObject club;
 	public Image clubImage;
 	public UIGradient gradient;
-	public TMP_Text nameText, memberText;
+	public TMP_Text abbrevText, nameText, taglineText, schoolText, memberText;
 	public Button button;
 	
 	public string searchableText = "";
@@ -19,11 +19,14 @@ public class ClubButton : MonoBehaviour
 		this.club = club;
 		
 		clubImage.sprite = club.icon;
-		nameText.text = club.name;
-		memberText.text = $"{club.members.GetNames().Length} members";
-		
 		gradient.LinearColor1 = club.startColor;
 		gradient.LinearColor2 = club.endColor;
+		
+		if (abbrevText) abbrevText.text = club.abbreviation;
+		if (nameText) nameText.text = club.name;
+		if (taglineText) taglineText.text = club.shortKeyWords;
+		if (schoolText) schoolText.text = club.categories;
+		if (memberText) memberText.text = $"{club.members.GetNames().Length} members";
 		
 		this.searchableText = club.name.ToLower() + " " + club.description.ToLower();
 	}
