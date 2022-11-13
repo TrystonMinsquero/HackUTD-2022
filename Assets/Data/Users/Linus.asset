@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67c54ed383e045e0bc0bafd1df0343e7, type: 3}
   m_Name: Linus
   m_EditorClassIdentifier: 
-  netId: bmc180001
-  password: a
+  netId: lxf20001
+  password: l
   firstName: Linus
-  lastName: Facler
+  lastName: Fackler
   friends:
   - Tryston Minsquero
   userClubs:
   - {fileID: 11400000, guid: f96915fd83a71b1499891ebb7ec5cfe9, type: 2}
   - {fileID: 11400000, guid: c5f3976c8d21e0e4b83aa1f2b4d32336, type: 2}
   - {fileID: 11400000, guid: 7ae713a41eb8b2a43929ff1cf8bac371, type: 2}
+  ownClub: {fileID: 11400000, guid: c5f3976c8d21e0e4b83aa1f2b4d32336, type: 2}
+  eventsGoing: []

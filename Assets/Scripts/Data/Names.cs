@@ -12,13 +12,8 @@ public class Names
     private string[] _names;
 
     public string[] GetNames()
-    {
-        if (_names == null)
-        {
-            _names = namesText.Split('\n');
-        }
-
-        return _names;
+    { 
+        return namesText.Split('\n');
     }
     
 

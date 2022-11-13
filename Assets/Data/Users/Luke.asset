@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67c54ed383e045e0bc0bafd1df0343e7, type: 3}
   m_Name: Luke
   m_EditorClassIdentifier: 
-  netId: luke
-  password: a
+  netId: lxj200010
+  password: l
   firstName: Luke
-  lastName: L
+  lastName: Jagg
   friends:
   - Tryston Minsquero
-  - Linus Facler
+  - Linus Fackler
   userClubs:
   - {fileID: 11400000, guid: bde348d33883ca54388f4358d8f98b83, type: 2}
+  ownClub: {fileID: 0}
+  eventsGoing: []

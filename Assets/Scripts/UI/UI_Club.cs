@@ -41,7 +41,7 @@ public class UI_Club : MonoBehaviour
 	    
 		if (abbrevText) abbrevText.text = attachedClub.abbreviation;
 		if (nameText) nameText.text = attachedClub.name;
-		if (presidentText) presidentText.text = $"President\n<b>{attachedClub.president}";
+		if (presidentText) presidentText.text = $"<b>Description";
 		if (tagline) tagline.text = attachedClub.shortKeyWords;
 		if (description) description.text = attachedClub.description;
 		if (description) description.text = attachedClub.description;
@@ -50,7 +50,7 @@ public class UI_Club : MonoBehaviour
 		if (memberCount) 
 		{
 			int mut = (from m in attachedClub.members.GetNames() where _controller.user.friends.Contains(m) select m).ToList().Count;
-			memberCount.text = $"{attachedClub.memberCount} Students\n{mut} Mutual Friends";
+			memberCount.text = $"{attachedClub.members.GetNames().Length} Students\n{mut} Mutual Friends";
 		}
 		if (members) members.text = attachedClub.members.namesText;
 		
