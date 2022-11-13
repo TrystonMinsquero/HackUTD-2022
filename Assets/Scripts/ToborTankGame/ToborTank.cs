@@ -79,7 +79,8 @@ public class ToborTank : Player
 	{
 		//var projectile = NetworkObjectPool.Singleton.GetNetworkObject(_projectilePrefab, _firePos.position, _firePos.rotation );
 		//projectile.GetComponent<Projectile>().destroyMeDaddy += CleanProjectile;
-		ShootClientRpc(_firePos.position, _firePos.rotation);
+		if (IsHost) ShootClientRpc(_firePos.position, _firePos.rotation);
+		else ShootServerRpc(_firePos.position, _firePos.rotation);
 	}
 
 	private void CleanProjectile(NetworkObject projectile)
@@ -105,6 +106,11 @@ public class ToborTank : Player
 		var t = projectile.transform;
 		t.position = _firePos.position;
 		t.rotation = _firePos.rotation;
+	}
+	
+	[ServerRpc]
+	private void ShootServerRpc(Vector3 pos, Quaternion rot) {
+		ShootClientRpc(pos, rot);
 	}
 	
 	[ClientRpc]
