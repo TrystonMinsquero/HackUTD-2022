@@ -15,11 +15,16 @@ MonoBehaviour:
   abbreviation: SGDA
   name: Student Game Developer Assocation
   shortKeyWords: Game Development
-  description: 'The Student Game Developer Association is a club focused on game
-    development. We serve to create a growing community of students and industry
-    professionals to promote game development. We foster this community by hosting
-    various events to help our members learn technical and professional skills associated
-    with the games industry. '
+  description: 'The SGDA serves to promote game development, create a growing community
+    of students and professionals involved in the games industry, and host events
+    related to video game development and its many facets.
+
+
+    The Student Game
+    Developer Association is a club focused on game development. We serve to create
+    a growing community of students and industry professionals to promote game development.
+    We foster this community by hosting various events to help our members learn
+    technical and professional skills associated with the games industry. '
   categories: ATEC, ECS
   memberCount: 331
   icon: {fileID: 21300000, guid: ac578087b22002e4cb7975dc54f03aeb, type: 3}

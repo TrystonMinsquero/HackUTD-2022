@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d499061baa2c4987b2b9f8dbb718d35, type: 3}
+  m_Name: 180
+  m_EditorClassIdentifier: 
+  abbreviation: 180 DC
+  name: 180 Degrees Consulting
+  shortKeyWords: 
+  description: "Mission: To ensure that non-profits and social enterprises in the
+    local, national, and international community can reach their full potential by
+    meeting their demand for affordable, high-quality strategic and operational assistance
+    rendered by the talent from The University of Texas at Dallas. \n\nOrganization
+    Description: \n180 Degrees Consulting (180DC) is the world's largest university-based
+    consultancy, providing high-quality pro-bono consulting services to socially
+    conscious organizations around the world. We work together with our clients to
+    overcome their unique challenges and help them further their missions. Since
+    its founding in September 2007, 180 Degrees Consulting completed over 2,500 consulting
+    services and volunteered over 3 million hours to various non-profit organization
+    across the globe."
+  categories: Nonprofit
+  memberCount: 51
+  icon: {fileID: 21300000, guid: cfc090b4f8b8642e1bf8b87e3d94402c, type: 3}
+  president: N/A
+  presidentIcon: {fileID: 0}
+  startColor: {r: 1, g: 0.7647059, b: 0.015686275, a: 1}
+  endColor: {r: 1, g: 0.27058825, b: 0.43529412, a: 1}
+  scene: 
+  events: []
+  members:
+    namesText: 
