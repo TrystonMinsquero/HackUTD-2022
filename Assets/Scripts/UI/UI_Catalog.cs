@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
+using System.Linq;
 
 public enum Sorting {
 	Name,
@@ -129,6 +130,14 @@ public class UI_Catalog : MonoBehaviour
 		}
 		
 		var results = AI.Run(searchText, descs);
+		var min = results.Min();
+		var max = results.Max();
+		for (int i = 0; i < results.Length; i++) {
+			var n = results[i];
+			results[i] = Mathf.Pow(Mathf.InverseLerp(min, max, n), 2) * Mathf.Lerp(1, max, 0.5f);
+		}
+		
+		
 		for (int i = 0; i < results.Length; i++) {
 			clubButtons[i].gameObject.SetActive(true);
 			clubButtons[i].meter.SetValue(results[i]);
