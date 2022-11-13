@@ -29,7 +29,14 @@ MonoBehaviour:
   startColor: {r: 1, g: 0.7647059, b: 0.015686275, a: 1}
   endColor: {r: 1, g: 0.27058825, b: 0.43529412, a: 1}
   scene: TankGame
-  events: []
+  events:
+  - name: Emo Night
+    club: Strings Attached
+    date: Nov 15th
+    time: 7:00pm - 10:00pm
+    desc: It's not a phase, it's a lifestyle! Come see your favorite Emo songs played
+      by UTD's Strings Attached!
+    location: The Plinth
   members:
     namesText: 'Tryston Minsquero
 
