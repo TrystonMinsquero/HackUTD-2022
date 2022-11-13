@@ -11,4 +11,5 @@ public class ClubObject : ScriptableObject
 	public List<Category> categories;
 	public Sprite icon, presidentIcon;
 	public int memberCount;
+	public Color startColor, endColor;
 }

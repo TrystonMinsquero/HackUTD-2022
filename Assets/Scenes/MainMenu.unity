@@ -1611,6 +1611,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 850313505}
+  - component: {fileID: 850313510}
   - component: {fileID: 850313507}
   - component: {fileID: 850313509}
   m_Layer: 0
@@ -1652,6 +1653,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7ae713a41eb8b2a43929ff1cf8bac371, type: 2}
   - {fileID: 11400000, guid: c5f3976c8d21e0e4b83aa1f2b4d32336, type: 2}
   - {fileID: 11400000, guid: f96915fd83a71b1499891ebb7ec5cfe9, type: 2}
+  content: {fileID: 2054175934}
+  clubPrefab: {fileID: 7650087131401697047, guid: 035b0a1cdf4b4462b88fffb5952570f8, type: 3}
   searchText: 
   sceneName: scene
 --- !u!114 &850313509
@@ -1699,6 +1702,20 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   attachedClub: {fileID: 0}
+--- !u!114 &850313510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850313504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79b34d35d6ba94bd7962cd05e9e67e8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  catalog: {fileID: 850313507}
+  clubViewer: {fileID: 850313509}
 --- !u!1 &908766834
 GameObject:
   m_ObjectHideFlags: 0

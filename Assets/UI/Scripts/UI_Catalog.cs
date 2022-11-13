@@ -7,10 +7,12 @@ public class UI_Catalog : MonoBehaviour
 {
 	
 	[SerializeField] List<ClubObject> clubs = new List<ClubObject>();
-	[SerializeField] 
+	[SerializeField] RectTransform content;
+	[SerializeField] ClubButton clubPrefab;
 	
 	public string searchText = "", sceneName = "scene";
 	
+	List<ClubButton> clubButtons = new List<ClubButton>();
 	
 	public void updateSearch() {
 		
@@ -18,8 +20,17 @@ public class UI_Catalog : MonoBehaviour
 	
     // Start is called before the first frame update
     void Start()
-    {
-        
+	{
+		foreach (Transform obj in content) {
+			Destroy(obj.gameObject);
+		}
+		
+	    foreach (ClubObject club in clubs) {
+	    	ClubButton button = Instantiate(clubPrefab, content);
+	    	button.Apply(club);
+	    	
+	    	clubButtons.Add(button);
+	    }
     }
 
     // Update is called once per frame
