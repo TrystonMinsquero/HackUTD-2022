@@ -28,6 +28,12 @@ namespace UI
                 timeInput.text, 
                 descInput.text, 
                 locInput.text);
+            nameInput.text = "";
+            dateInput.text = "";
+            timeInput.text = "";
+            descInput.text = "";
+            locInput.text = "";
+
         }
 
         private void AddEvent(ClubObject club, string eventName, string date, string time, string description, string location)

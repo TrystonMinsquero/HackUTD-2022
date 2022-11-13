@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4048469752176385149}
   - component: {fileID: 4048469752176385146}
   - component: {fileID: 4048469752176385147}
-  - component: {fileID: 4048469752176385144}
   - component: {fileID: 1649416686172903515}
   m_Layer: 0
   m_Name: Snake
@@ -153,64 +152,6 @@ MonoBehaviour:
   segmentPrefab: {fileID: 3497772825706912888, guid: 340ec4d50c2f59e448b628a5e9ed0637, type: 3}
   initialSize: 5
   scoreText: {fileID: 0}
---- !u!114 &4048469752176385144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4048469752176385159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 2557720d7c3367a419c75a47f414602c, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4048469752176385147}
-        m_TargetAssemblyTypeName: Snake, Assembly-CSharp
-        m_MethodName: Move
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 36691a22-3135-4460-be4f-0fa844deb606
-    m_ActionName: Generic/LeftAxis[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 01bad9ac-cc2f-4fc6-86ce-02de1559c73f
-    m_ActionName: Generic/LeftAction[/Mouse/leftButton]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: c36e0afd-6ba5-4c09-bbcb-5ec40508bf11
-    m_ActionName: Generic/RightAction[/Mouse/rightButton]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 023687f0-5851-4733-90e4-61281e4f2ac3
-    m_ActionName: Generic/RightAxis[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Generic
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!114 &1649416686172903515
 MonoBehaviour:
   m_ObjectHideFlags: 0

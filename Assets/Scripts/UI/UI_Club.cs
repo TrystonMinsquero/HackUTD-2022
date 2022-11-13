@@ -90,6 +90,7 @@ public class UI_Club : MonoBehaviour
 		{
 			_controller.user.userClubs.Remove(attachedClub);
 		}
+		CheckJoined();
 	}
 		
 	private void CheckJoined()
