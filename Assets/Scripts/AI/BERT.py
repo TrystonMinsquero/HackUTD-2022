@@ -16,7 +16,7 @@ while True:
     num = int(input())
     str = input()
     
-    token_length=20
+    token_length=40
     out1 = get_embeddings(str, token_length=token_length)
     
     out = []

@@ -49,7 +49,8 @@ MonoBehaviour:
     club: ACM
     date: Nov 12
     time: 12:00pm - 8:00pm
-    desc: Create, prototype, deploy! Attend workshops!
+    desc: Computing machinery, explore topics in computer science and programming.
+      Create, prototype, deploy! Attend workshops!
     location: ECSW
   members:
     namesText: 'Tryston Minsquero

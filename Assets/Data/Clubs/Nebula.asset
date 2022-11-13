@@ -15,51 +15,51 @@ MonoBehaviour:
   abbreviation: Nebula
   name: Nebula Labs
   shortKeyWords: 
-  description: 'Nebula Labs is an interdisciplinary community consisting of developers
-    and designers that build tools for UT Dallas students like a degree planner and
-    a tool to visualize professor data.
+  description: 'Nebula Labs is an interdisciplinary community consisting of open-source
+    developers and designers that build tools for UT Dallas students like a degree
+    planner and a tool to visualize professor data.
 
-    
+
 
     Our purpose is to:
 
-    * Create
-    and maintain an interdisciplinary community of learners
+    *
+    Create and maintain an interdisciplinary community of learners
 
-    * Improve the lives
-    of others by providing a platform that allows students to build and maintain
-    tools for the community
+    * Improve
+    the lives of others by providing a platform that allows students to build and
+    maintain tools for the community
 
-    * Provide students opportunities to serve the UT
-    Dallas community through experiential learning
+    * Provide students opportunities to serve
+    the UT Dallas community through experiential learning
 
-    * Host technical and design
-    workshops, teach-ins, and other events for UT Dallas students
+    * Host technical and
+    design workshops, teach-ins, and other events for UT Dallas students
 
-    
+
 
     Our
     current projects in development are:
 
-    * Planner - An interactive degree
-    planner
-
-    * Survival Guide - A wiki filled with information about life at
-    UT Dallas
-
-    * Trends - A website that displays course grades, evals, and
-    more
-
-    * Jupiter - A portal for everything related to student organizations
+    * Planner - An interactive degree planner
 
     *
-    API/Platform - The backend that supports all of our projects
+    Survival Guide - A wiki filled with information about life at UT Dallas
 
-    
+    *
+    Trends - A website that displays course grades, evals, and more
 
-    If
-    building real, impactful projects for others appeals to you, please check out
-    our website (https://about.utdnebula.com/) and join our Discord (https://discord.gg/tcpcnfxmeQ)'
+    * Jupiter
+    - A portal for everything related to student organizations
+
+    * API/Platform
+    - The backend that supports all of our projects
+
+
+
+    If building real, impactful
+    projects for others appeals to you, please check out our website (https://about.utdnebula.com/)
+    and join our Discord (https://discord.gg/tcpcnfxmeQ)'
   categories: ECS, ATEC
   memberCount: 0
   icon: {fileID: 21300000, guid: 2fcfc9302b80fcc4ea225da7202f620d, type: 3}
