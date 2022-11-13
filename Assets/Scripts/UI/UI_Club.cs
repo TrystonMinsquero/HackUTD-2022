@@ -10,6 +10,7 @@ public class UI_Club : MonoBehaviour
 	[SerializeField] private UI_Controller _controller;
 	public RectTransform clubTransform;
 	public TMP_Text abbrevText, nameText, presidentText, tagline, description, memberCount;
+	public Image logoImage;
 	public Image presidentImage;
 	
 	public int startPosition, endPosition;
@@ -43,6 +44,7 @@ public class UI_Club : MonoBehaviour
 		if (tagline) tagline.text = attachedClub.shortKeyWords;
 		if (description) description.text = attachedClub.description;
 		if (description) description.text = attachedClub.description;
+		if (logoImage) logoImage.sprite = attachedClub.icon;
 		if (presidentImage) presidentImage.sprite = attachedClub.presidentIcon;
 		if (memberCount) memberCount.text = $"Members: {attachedClub.memberCount}";
 		
