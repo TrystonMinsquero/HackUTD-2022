@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,14 +10,12 @@ public class Meter : MonoBehaviour
     public Gradient colorGradient;
 
     [SerializeField] private RectTransform bar;
-    private Image[] images;
 
     public float Value { get; set; }
     private float _maxVal;
 
     private void Awake()
     {
-        images = GetComponentsInChildren<Image>();
         _maxVal = bar.sizeDelta.x;
         SetValue(1);
     }
@@ -26,7 +24,7 @@ public class Meter : MonoBehaviour
     {
         Value = value;
         bar.sizeDelta = new Vector2(value * _maxVal, bar.sizeDelta.y);
-        foreach (var image in images)
+        foreach (var image in GetComponentsInChildren<Image>())
         {
             image.color = colorGradient.Evaluate(value);
         }

@@ -14,7 +14,7 @@ public class ClubButton : MonoBehaviour
 	public Button button;
 	public Meter meter;
 	
-	public string searchableText = "";
+	public string searchableText = "club";
 	
 	public void Apply(ClubObject club) {
 		this.club = club;

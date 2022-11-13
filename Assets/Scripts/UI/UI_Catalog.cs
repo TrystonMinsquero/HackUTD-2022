@@ -123,8 +123,8 @@ public class UI_Catalog : MonoBehaviour
 		
 		var results = AI.Run(searchText, descs);
 		for (int i = 0; i < results.Length; i++) {
-			clubButtons[i].meter.SetValue(results[i]);
 			clubButtons[i].gameObject.SetActive(true);
+			clubButtons[i].meter.SetValue(results[i]);
 		}
 		
 		sorting = Sorting.Meter;

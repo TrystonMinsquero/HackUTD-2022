@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -17,8 +17,8 @@ public static class AI
     public static float[] Run(string input, List<string> tests)
     {
         ProcessStartInfo start = new ProcessStartInfo();
-        start.FileName = "/usr/bin/python3";
-        start.Arguments = "BERT.py";
+	    start.FileName = "/Library/Frameworks/Python.framework/Versions/3.10/bin/python3";
+	    start.Arguments = "/Users/luke/Documents/GitHub/HackUTD-2022/Assets/Scripts/AI/BERT.py";
         start.UseShellExecute = false;
         start.RedirectStandardInput = true;
         start.RedirectStandardOutput = true;
@@ -32,8 +32,8 @@ public static class AI
             for (int i = 0; i < tests.Count; i++)
                 writer.Write($"{fix(tests[i])}\n");
             
-            string line = reader.ReadLine();
-            Console.WriteLine(line);
+	        string line = reader.ReadLine().TrimEnd(':');
+	        UnityEngine.Debug.LogWarning(line);
             var l = line.Split(":").Select(s => float.Parse(s));
             return l.ToArray();
         }
