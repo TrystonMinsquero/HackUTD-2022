@@ -48,6 +48,7 @@ public class UI_Login : MonoBehaviour
 	{
 		_controller.user = user;
 		_controller.ChangeTab(1);
+		_controller.CheckClubAdmin();
 	}
 	
 	private void FailedLogin(string message)

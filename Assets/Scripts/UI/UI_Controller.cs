@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class UI_Controller : MonoBehaviour
@@ -15,7 +16,10 @@ public class UI_Controller : MonoBehaviour
 	    Application.targetFrameRate = 60;
 	    
 	    if (_requireLogin) ChangeTab(0);
+	    CheckClubAdmin();
     }
+
+    public void CheckClubAdmin() => navbar.transform.Find("Club Admin").gameObject.SetActive(user.ownClub != null);
 	
 	public void ChangeTab(int index) {
 		for (int i = 0; i < screens.Length; i++) {
