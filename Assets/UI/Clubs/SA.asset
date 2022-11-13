@@ -22,4 +22,8 @@ MonoBehaviour:
     skills, and playing actively with other members.
   categories: 03000000
   icon: {fileID: 21300000, guid: c3e1061bb09dd7d40b357b57783b3209, type: 3}
+  presidentIcon: {fileID: 0}
   memberCount: 26
+  startColor: {r: 1, g: 0.7647059, b: 0.015686275, a: 1}
+  endColor: {r: 1, g: 0.27058825, b: 0.43529412, a: 1}
+  scene: TankGame

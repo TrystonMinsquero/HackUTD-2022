@@ -1761,6 +1761,7 @@ MonoBehaviour:
   cellSize: {x: 429.41653, y: 600}
   fitX: 1
   fitY: 0
+  square: 0
 --- !u!1 &1176131834
 GameObject:
   m_ObjectHideFlags: 0
@@ -2711,6 +2712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _debug: 1
+  JoinCodeKey: GenericGame
 --- !u!4 &1761555387
 Transform:
   m_ObjectHideFlags: 0

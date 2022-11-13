@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UI_Club : MonoBehaviour
 {
@@ -17,13 +18,12 @@ public class UI_Club : MonoBehaviour
 	
 	public ClubObject attachedClub;
 	
-    void Start()
-    {
-        
-    }
-
+	void Start() {
+		clubTransform.anchoredPosition = new Vector2(0, startPosition);
+	}
+	
     void Update()
-    {
+	{
 	    string name="", pres="", desc="";
 	    Sprite presImage=null;
 	    
@@ -60,8 +60,12 @@ public class UI_Club : MonoBehaviour
 			}
 			
 			clubTransform.anchoredPosition = new Vector2(0, b);
-			attachedClub = null;
 			busy = false;
 		}
+	}
+	
+	public void Join() {
+		if (attachedClub.scene.Length > 0)
+			SceneManager.LoadScene(attachedClub.scene);
 	}
 }
