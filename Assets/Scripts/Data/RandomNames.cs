@@ -6,7 +6,8 @@ public static class RandomNames
     
     public static string GenerateRandomNamesString(int num)
     {
-        var names = GetRandomNames(num);
+	    var names = GetRandomNames(num);
+    	Helper.Shuffle<string>(names);
         StringBuilder nameString = new StringBuilder();
         foreach (var name in names)
         {

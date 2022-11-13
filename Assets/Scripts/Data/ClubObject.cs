@@ -64,6 +64,5 @@ public class ClubObject : ScriptableObject
 	{
 		members.namesText = RandomNames.GenerateRandomNamesString(num);
 	}
-#endif 
-
+#endif
 }

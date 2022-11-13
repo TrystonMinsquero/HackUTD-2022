@@ -4,12 +4,13 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
 public class UI_Club : MonoBehaviour
 {
 	[SerializeField] private UI_Controller _controller;
 	public RectTransform clubTransform;
-	public TMP_Text abbrevText, nameText, presidentText, tagline, description, memberCount;
+	public TMP_Text abbrevText, nameText, presidentText, tagline, description, memberCount, members;
 	public Image logoImage;
 	public Image presidentImage;
 	
@@ -46,7 +47,12 @@ public class UI_Club : MonoBehaviour
 		if (description) description.text = attachedClub.description;
 		if (logoImage) logoImage.sprite = attachedClub.icon;
 		if (presidentImage) presidentImage.sprite = attachedClub.presidentIcon;
-		if (memberCount) memberCount.text = $"Members: {attachedClub.memberCount}";
+		if (memberCount) 
+		{
+			int mut = (from m in attachedClub.members.GetNames() where _controller.user.friends.Contains(m) select m).ToList().Count;
+			memberCount.text = $"{attachedClub.memberCount} Students\n{mut} Mutual Friends";
+		}
+		if (members) members.text = attachedClub.members.namesText;
 		
 		CheckJoined();
 		StartCoroutine(lerp(startPosition, endPosition));
