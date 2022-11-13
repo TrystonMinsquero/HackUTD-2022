@@ -74,6 +74,8 @@ public class UI_Catalog : MonoBehaviour
 			bool contains = button.searchableText.Contains(searchText);
 			button.meter.gameObject.SetActive(contains);
 		}
+		
+		Sort();
 	}
 	
 	public void SetSort(Sorting sorting) {
@@ -122,10 +124,11 @@ public class UI_Catalog : MonoBehaviour
 	}
 	
 	public void SearchAI() {
+		#if UNITY_EDITOR
 		var descs = new List<string>();
 		
 		foreach (ClubButton btn in clubButtons) {
-			descs.Add(btn.searchableText);
+			descs.Add(btn.club.description);
 			btn.meter.gameObject.SetActive(true);
 		}
 		
@@ -145,5 +148,6 @@ public class UI_Catalog : MonoBehaviour
 		
 		sorting = Sorting.Meter;
 		Sort();
+		#endif
 	}
 }

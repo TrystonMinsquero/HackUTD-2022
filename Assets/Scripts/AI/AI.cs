@@ -19,19 +19,24 @@ public static class AI
     private static StreamWriter writer;
     private static Process process;
     public static void Start()
-    {
-        ProcessStartInfo start = new ProcessStartInfo();
-        start.FileName = "/Library/Frameworks/Python.framework/Versions/3.10/bin/python3";
-        start.Arguments = "/Users/luke/Documents/GitHub/HackUTD-2022/Assets/Scripts/AI/BERT.py";
-        start.UseShellExecute = false;
-        start.RedirectStandardInput = true;
-        start.RedirectStandardOutput = true;
-        start.CreateNoWindow = true;
-
-        Process process = Process.Start(start); 
-        
-        reader = process.StandardOutput;
-        writer = process.StandardInput;
+	{
+		try {
+	        ProcessStartInfo start = new ProcessStartInfo();
+	        start.FileName = "/Library/Frameworks/Python.framework/Versions/3.10/bin/python3";
+	        start.Arguments = "/Users/luke/Documents/GitHub/HackUTD-2022/Assets/Scripts/AI/BERT.py";
+	        start.UseShellExecute = false;
+	        start.RedirectStandardInput = true;
+	        start.RedirectStandardOutput = true;
+	        start.CreateNoWindow = true;
+	
+	        Process process = Process.Start(start); 
+	        
+	        reader = process.StandardOutput;
+			writer = process.StandardInput;
+		}
+		catch (Exception e) {
+			
+		}
     }
     
     public static float[] Run(string input, List<string> tests)

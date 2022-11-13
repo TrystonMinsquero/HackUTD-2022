@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TankGame.unity
     guid: d0cb603c6ea1d5d45bf355c7804b8295
-  - enabled: 1
+  - enabled: 0
     path: Assets/QR/Scenes/SampleScene.unity
     guid: 0a6686806db0ae1468babf2ce64b6b30
   m_configObjects:
