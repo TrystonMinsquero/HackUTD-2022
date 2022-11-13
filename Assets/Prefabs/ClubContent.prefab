@@ -93,7 +93,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56.1
+  m_fontSize: 84.15
   m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1205,6 +1205,7 @@ MonoBehaviour:
   tagline: {fileID: 0}
   description: {fileID: 3107256585751727119}
   memberCount: {fileID: 0}
+  clubLogo: {fileID: 3107256585005542833}
   presidentImage: {fileID: 3107256585637599432}
   startPosition: -2500
   endPosition: -50
