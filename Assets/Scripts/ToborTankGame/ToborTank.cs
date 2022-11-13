@@ -6,17 +6,18 @@ public class ToborTank : Player
 	[SerializeField] private float _moveSpeed = 2;
 	[SerializeField] private float _turnSpeed = 2;
 	[SerializeField] private float _fireCooldown = 2;
-	[SerializeField] private Projectile _objToFire;
 	[SerializeField] private Transform _firePos;
 	
-	private Rigidbody Rb;
+	private ProjectilePool _projectilePool;
+	private Rigidbody _rb;
 	private float _forwardAmount;
 	private float _turnAmount;
 	private float _fireTime;
 
 	private void Awake()
 	{
-		Rb = GetComponent<Rigidbody>();
+		_rb = GetComponent<Rigidbody>();
+		_projectilePool = GetComponentInChildren<ProjectilePool>();
 	}
 	
 	private void Update()
@@ -45,21 +46,21 @@ public class ToborTank : Player
 	{
 		float moveAmountThisFrame = _forwardAmount * speed;
 		Vector3 moveOffset = transform.forward * moveAmountThisFrame;
-		Rb.velocity = moveOffset;
+		_rb.velocity = moveOffset;
 	}
 
 	private void Turn(float speed)
 	{
 		float turnAmountThisFrame = _turnAmount * speed;
 		Quaternion turnOffset = Quaternion.Euler(0, turnAmountThisFrame, 0);
-		Rb.MoveRotation(Rb.rotation * turnOffset);
+		_rb.MoveRotation(_rb.rotation * turnOffset);
 	}
 	
 	private void Fire()
 	{
 		if (Time.time - _fireTime < _fireCooldown) return;
 		_fireTime = Time.time;
-		var t = Instantiate(_objToFire).transform;
+		var t = _projectilePool.GetProjectile().transform;
 		t.position = _firePos.position;
 		t.rotation = _firePos.rotation;
 	}

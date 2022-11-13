@@ -10,7 +10,7 @@ public class ClubButton : MonoBehaviour
 	public ClubObject club;
 	public Image clubImage;
 	public UIGradient gradient;
-	public TextMeshProUGUI nameText, memberText;
+	public TMP_Text nameText, memberText;
 	public Button button;
 	
 	public string searchableText = "";
@@ -20,7 +20,7 @@ public class ClubButton : MonoBehaviour
 		
 		clubImage.sprite = club.icon;
 		nameText.text = club.name;
-		memberText.text = $"{club.memberCount} members";
+		memberText.text = $"{club.members.GetNames().Length} members";
 		
 		gradient.LinearColor1 = club.startColor;
 		gradient.LinearColor2 = club.endColor;
