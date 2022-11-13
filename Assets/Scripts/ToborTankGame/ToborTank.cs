@@ -10,6 +10,9 @@ public class ToborTank : Player
 	[SerializeField] GameObject _projectilePrefab;
 	[SerializeField] private Transform _firePos;
 	
+	NetworkVariable<Vector3> pos = new NetworkVariable<Vector3>();
+	NetworkVariable<Quaternion> rot = new NetworkVariable<Quaternion>();
+	
 	private Rigidbody _rb;
 	private float _forwardAmount;
 	private float _turnAmount;
@@ -22,7 +25,12 @@ public class ToborTank : Player
 	
 	private void Update()
 	{
-		if (!IsOwner) return;
+		if (!IsOwner) {
+			transform.position = Vector3.Lerp(transform.position, pos.Value, Time.deltaTime * 5);
+			transform.rotation = Quaternion.Lerp(transform.rotation, rot.Value, Time.deltaTime * 5);
+			
+			return;
+		}
 		
 		
 		_forwardAmount = InputControls.LeftAxisInput.y;
@@ -34,6 +42,9 @@ public class ToborTank : Player
 			_fireTime = Time.time;
 			Fire();
 		}
+		
+		pos.Value = transform.position;
+		rot.Value = transform.rotation;
 	}
 	
 	private void FixedUpdate()
@@ -65,8 +76,9 @@ public class ToborTank : Player
 
 	private void Fire()
 	{
-		var projectile = NetworkObjectPool.Singleton.GetNetworkObject(_projectilePrefab, _firePos.position, _firePos.rotation );
-		projectile.GetComponent<Projectile>().destroyMeDaddy += CleanProjectile;
+		//var projectile = NetworkObjectPool.Singleton.GetNetworkObject(_projectilePrefab, _firePos.position, _firePos.rotation );
+		//projectile.GetComponent<Projectile>().destroyMeDaddy += CleanProjectile;
+		ShootClientRpc(_firePos.position, _firePos.rotation);
 	}
 
 	private void CleanProjectile(NetworkObject projectile)
@@ -92,5 +104,11 @@ public class ToborTank : Player
 		var t = projectile.transform;
 		t.position = _firePos.position;
 		t.rotation = _firePos.rotation;
+	}
+	
+	[ClientRpc]
+	private void ShootClientRpc(Vector3 pos, Quaternion rot) {
+		var s = Instantiate(_projectilePrefab, pos, rot);
+		
 	}
 }
